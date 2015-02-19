@@ -12,6 +12,6 @@ test:
 
 deployment:
     aws:
-        branch: ci-test
+        branch: master
         commands:
             - /bin/bash publish.sh    
