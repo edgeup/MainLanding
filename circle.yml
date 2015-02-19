@@ -1,0 +1,17 @@
+machine:
+    node:
+        version: 0.10.36
+
+dependencies:
+    override:
+        - sudo pip install awscli
+
+test:
+    override:
+        - echo "Hello"
+
+deployment:
+    aws:
+        branch: ci-test
+        commands:
+            - /bin/bash publish.sh    
