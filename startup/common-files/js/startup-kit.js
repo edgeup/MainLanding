@@ -833,11 +833,11 @@ startupKit.uiKitContent.content21 = function() {
 startupKit.uiKitContent.content22 = function() {
 
     (function(el) {
-        if (isRetina) {
+        /*if (isRetina) {
             $('.img img', el).each(function() {
                 $(this).attr('src', $(this).attr('src').replace(/.png/i, '@2x.png'));
             });
-        }
+        }*/
 
         $(window).resize(function() {
             if (!el.hasClass('ani-processed')) {
