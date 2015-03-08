@@ -2120,6 +2120,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 
 /* Section For Staff */
+.staff { padding-bottom: 128px; }
 .imgWrap {
 	margin: 1rem 0 2.5rem;
 	overflow: hidden;
