@@ -2118,3 +2118,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     margin-bottom: -5px;
   }
 }
+
+/* Section For Staff */
+.imgWrap { margin: 1rem 0 }
+.imgWrap img { width: 100% }
+.imgWrap h1 { font-size: 1.5em }
