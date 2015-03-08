@@ -1925,8 +1925,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * Footer 7 stylesheet  
  * */
 .footer-7 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 4rem 0;
   color: #bdc3c7;
   line-height: 25px;
   text-align: center;
