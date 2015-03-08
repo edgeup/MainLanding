@@ -1925,8 +1925,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * Footer 7 stylesheet  
  * */
 .footer-7 {
-  padding-top: 150px;
-  padding-bottom: 110px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: #bdc3c7;
   line-height: 25px;
   text-align: center;
@@ -1978,16 +1978,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     display: block;
     vertical-align: baseline;
   }
-}
-.footer-7:before {
-  content: '';
-  position: absolute;
-  top: 110px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  overflow: hidden;
-  background: #e2e4e6;
 }
 .footer-7 a {
   color: #bdc3c7;
