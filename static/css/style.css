@@ -2120,6 +2120,24 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 
 /* Section For Staff */
-.imgWrap { margin: 1rem 0 }
+.imgWrap {
+	margin: 1rem 0;
+}
+.member {
+	background: #eee;
+	padding-bottom: 1rem;
+	border-radius: 1rem;
+}
 .imgWrap img { width: 100% }
 .imgWrap h1 { font-size: 1.5em }
+.social { margin: 0; }
+.social a {
+	background: dodgerblue;
+	color: #fff;
+	line-height: 200%;
+}
+.social a:hover { background: black }
+.social .tw { background-color: #55acee }
+.social .li { background-color: #0077b5 }
+.social .fb { background-color: #3B5998 }
+
