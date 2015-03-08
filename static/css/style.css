@@ -2121,15 +2121,20 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 
 /* Section For Staff */
 .imgWrap {
-	margin: 1rem 0;
+	margin: 1rem 0 2.5rem;
+	overflow: hidden;
 }
 .member {
-	background: #eee;
+	background: #ddd;
 	padding-bottom: 1rem;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 }
 .imgWrap img { width: 100% }
-.imgWrap h1 { font-size: 1.5em }
+.imgWrap h1 {
+	font-size: 1.5em;
+	margin-bottom: 0.25rem;
+}
+.imgWrap p { padding-bottom: 0.5rem; }
 .social { margin: 0; }
 .social a {
 	background: dodgerblue;
@@ -2140,4 +2145,13 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .social .tw { background-color: #55acee }
 .social .li { background-color: #0077b5 }
 .social .fb { background-color: #3B5998 }
+.social .gh,
+.social .al,
+.social .bh { background-color: #333 }
 
+@media (max-width: 990px) {
+	.social a {
+		display: block !important;
+		padding: 1rem 0.5rem;
+	}
+}
