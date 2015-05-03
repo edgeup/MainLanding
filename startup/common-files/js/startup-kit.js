@@ -806,21 +806,20 @@ startupKit.uiKitContent.content20 = function() {};
 /* Content 21*/
 startupKit.uiKitContent.content21 = function() {
 
-    $(window).resize(function() {
-        $('.content-21 .features').each(function() {
-            var maxH = 0;
-            $('.features-body', this).css('height', 'auto').each(function() {
-                var h = $(this).outerHeight();
-                if (h > maxH)
-                    maxH = h;
-            }).css('height', maxH + 'px');
-            $('.features-bodies', this).css('height', maxH + 'px');
-            if(!$('.features-bodies', this).hasClass('calculated')){
-                $('.features-bodies', this).addClass('calculated');
-            }
-        });
-    });
-
+    //$(window).resize(function() {
+    //    $('.content-21 .features').each(function() {
+    //        var maxH = 0;
+    //        $('.features-body', this).css('height', 'auto').each(function() {
+    //            var h = $(this).outerHeight();
+    //            if (h > maxH)
+    //                maxH = h;
+    //        }).css('height', maxH + 'px');
+    //        $('.features-bodies', this).css('height', maxH + 'px');
+    //        if(!$('.features-bodies', this).hasClass('calculated')){
+    //            $('.features-bodies', this).addClass('calculated');
+    //        }
+    //    });
+    //});
     $('.content-21 .features .features-header .box').click(function() {
         $(this).addClass('active').parent().children().not(this).removeClass('active');
         $(this).closest('.features').find('.features-body').removeClass('active').eq($(this).index()).addClass('active');
