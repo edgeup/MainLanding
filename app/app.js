@@ -1,8 +1,13 @@
 angular.module("app", ["ui.router"])
 
     .config(function config($stateProvider) {
-        $stateProvider.state("index", {
+        $stateProvider.state("home", {
             url:"",
+            controller:"HomeCtrl as home",
+            templateUrl: "templates/home.html"
+        })
+        $stateProvider.state("first", {
+            url:"/first",
             controller:"FirstCtrl as first",
             templateUrl: "templates/first.html"
         })
@@ -19,6 +24,10 @@ angular.module("app", ["ui.router"])
         greeting.message = "Default";
     })
 
+    .controller ("HomeCtrl", function HomeCtrl() {
+    var home = this;
+    })
+
     .controller ("FirstCtrl", function FirstCtrl(greeting) {
     var first = this;
 
@@ -29,4 +38,4 @@ angular.module("app", ["ui.router"])
     var second = this;
 
     second.greeting = greeting;
-})
+    })
