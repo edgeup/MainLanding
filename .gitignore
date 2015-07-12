@@ -7,3 +7,5 @@ build
 .idea
 *.swp
 Icon
+.tmp
+dist
