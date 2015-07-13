@@ -22,9 +22,9 @@
   transition: none;
 
   &:hover {
-    background: #4d4d4d;
+    background: darken($brand_color-teal, 20%);
     color: #ffffff;
-    border: 1px solid #4d4d4d;
+    border: 1px solid darken($brand_color-teal, 40%);
     text-decoration: none;
   }
 }
@@ -42,7 +42,7 @@
 
 .button--primary {
   @extend .button;
-  @include style-button(#4285f4, #ffffff);
+  @include style-button($brand_color-teal, #ffffff);
 }
 
 .button--secondary {

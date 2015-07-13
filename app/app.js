@@ -2,12 +2,12 @@ angular.module("app", ["ui.router"])
 
     .config(function config($stateProvider) {
         $stateProvider.state("home", {
-            url:"",
+            url: "",
             controller:"HomeCtrl as home",
             templateUrl: "templates/home.html"
         })
         $stateProvider.state("first", {
-            url:"/first",
+            url: "/first",
             controller:"FirstCtrl as first",
             templateUrl: "templates/first.html"
         })
