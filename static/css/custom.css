@@ -7,6 +7,10 @@ Hero Banner
 ::-webkit-input-placeholder {
   color: #999 !important; }
 
+.hero .lead {
+  padding-bottom: 1rem;
+  opacity: 0.75; }
+
 .header-6-sub .signup-form {
   max-width: 760px;
   width: 100%; }
