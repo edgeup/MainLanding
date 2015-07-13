@@ -981,8 +981,8 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 768px) {
   .header-6-sub {
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 100px;
   }
 }
 .header-6-sub h3 {
