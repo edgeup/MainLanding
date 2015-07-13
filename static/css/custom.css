@@ -18,15 +18,23 @@ General Sections
 Main Video Section
 *************** */
 .pitchVid {
-  border-top: 1px solid rgba(236, 239, 241, 0.25);
-  background: #0c131a;
-  padding: 6rem 0; }
+  background: url("../../images/basic_cover.jpg") no-repeat #0c131a;
+  background-size: cover;
+  padding: 6rem 0;
+  overflow: hidden; }
   .pitchVid h3 {
     color: rgba(236, 239, 241, 0.6); }
-  .pitchVid .vidWrapper {
-    width: 100%; }
   .pitchVid .embed-responsive, .pitchVid iframe {
-    border: 0; }
+    border: 0;
+    border-radius: 1rem; }
+  .pitchVid .embed-responsive {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25); }
+
+/* *****************
+Blog Callout Section
+***************** */
+.blog_callout {
+  padding: 20rem; }
 
 /* **************
 Dimension Section

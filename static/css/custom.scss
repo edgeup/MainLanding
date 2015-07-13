@@ -11,6 +11,10 @@ $brand_color-dkblue: #1b3644;
 $brand_color-grey: #424242;
 $brand_color-black: #111;
 
+
+
+
+
 /* *********
 Hero Banner
 ******* */
@@ -42,18 +46,32 @@ Main Video Section
 *************** */
 
 .pitchVid {
-  border-top: 1px solid rgba($brand_color-blueGrey1, 0.25);
-  background: rgb(12, 19, 26);
+  background: url("../../images/basic_cover.jpg") no-repeat rgb(12, 19, 26);
+  background-size: cover;
   padding: 6rem 0;
+  overflow: hidden;
   h3 {
     color: rgba($brand_color-blueGrey1, 0.6);
   }
-  .vidWrapper {
-	width: 100%;
-  }
   .embed-responsive, iframe {
 	border: 0;
+    border-radius: 1rem;
   }
+  .embed-responsive {
+    box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+  }
+}
+
+
+
+
+
+/* *****************
+Blog Callout Section
+***************** */
+
+.blog_callout {
+  padding: 20rem;
 }
 
 
