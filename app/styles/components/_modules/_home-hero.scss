@@ -16,16 +16,23 @@ $brand_color-black: #111;
 
 .home-hero {
   background-color: black;
-  background-image: url('../images/atBarBlur.jpg');
+  background-image: url('../images/heroBG.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   color: #fff;
   font-weight: bold;
-  height: 400px;
   padding: 0 16px;
   padding-top: 80px;
+  text-align: center;
+  padding-bottom: 90px;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
 .blue-line {
@@ -34,6 +41,7 @@ $brand_color-black: #111;
   text-align: center;
   height: 2px;
   width: 75px;
+  margin-bottom: 20px 0;
   background-color: $brand_color-teal;
 }
 
@@ -46,6 +54,7 @@ $brand_color-black: #111;
   h2 {
     color: white;
   }
+
   p {
     color: #3B708B;
     padding-bottom: 40px;
@@ -82,7 +91,80 @@ $brand_color-black: #111;
     }
   }
 }
+.shareCampaign {
+  p {
+    color: white;
+  }
+  .shareButtons {
+    width: 290px;
+    margin: 0 auto;
+    button {
+      float: left;
+      border: none;
+      width: 135px;
+      margin-top: 15px;
+    }
+    .twitter {
+      background-color: #4099FF;
+      margin-right: 20px;
+    }
+    .facebook {
+      background-color: #3B5998;
+    }
+  }
 
+}
+
+.appearances {
+  .logosHolder {
+    display: flex;
+    flex-flow: row wrap;
+    height: 300px;
+    img {
+      width: 130px;
+      margin: auto;
+    }
+  }
+}
+
+.appHighlight {
+  background-image: url('../images/mobileHighlight.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  p {
+    color: white;
+  }
+}
+
+.winLeague {
+  background-image: url('../images/leagueBG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  h3 {
+    color: white;
+  }
+}
+
+.cogNewsDemo {
+  padding-bottom: 80px;
+}
+
+footer {
+  padding-top: 40px;
+  text-align: center;
+  background-color: #254E5E;
+  .twitter {
+    margin-right: 20px;
+  }
+  p {
+    color: white;
+  }
+  span {
+    font-size: 10px;
+    color: white;
+  }
+}
 
 .embed-responsive {
   position: relative;

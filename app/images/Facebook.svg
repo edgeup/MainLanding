@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Crowdfunding" sketch:type="MSArtboardGroup" transform="translate(-213.000000, -1252.000000)">
+            <g id="Share-the-campaign" sketch:type="MSLayerGroup" transform="translate(19.000000, 1203.000000)">
+                <g id="Facebook-Box" transform="translate(150.000000, 47.000000)" sketch:type="MSShapeGroup">
+                    <g id="Facebook" transform="translate(44.000000, 2.000000)">
+                        <path d="M0.0823462523,21.6393443 C0.0823462523,9.68826384 9.78461047,0 21.7529612,0 C33.721312,0 43.4235762,9.68826384 43.4235762,21.6393443 C43.4235762,33.5904247 33.721312,43.2786885 21.7529612,43.2786885 C9.78461047,43.2786885 0.0823462523,33.5904247 0.0823462523,21.6393443 Z" fill="#3B5998"></path>
+                        <path d="M23.5650402,33.4109116 L23.5650402,21.6379659 L26.8148881,21.6379659 L27.2455631,17.5809436 L23.5650402,17.5809436 L23.5705617,15.5503649 C23.5705617,14.492231 23.6710985,13.9252587 25.1908844,13.9252587 L27.222557,13.9252587 L27.222557,9.86777689 L23.9722489,9.86777689 C20.0681063,9.86777689 18.6939493,11.8358692 18.6939493,15.1455816 L18.6939493,17.581403 L16.2603594,17.581403 L16.2603594,21.6384253 L18.6939493,21.6384253 L18.6939493,33.4109116 L23.5650402,33.4109116 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
