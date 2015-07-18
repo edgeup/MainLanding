@@ -81,10 +81,13 @@ img.sit {
   background-color: #1b3644;
   h2 {
     color: white;
+	margin-bottom: 3rem;
   }
   p {
     color: $brand_color-ltblue;
     padding: 0 0 3rem;
+	margin: 0 auto;
+	max-width: 400px;
   }
 }
 
