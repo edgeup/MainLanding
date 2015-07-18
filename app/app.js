@@ -14,11 +14,15 @@ app.config(['$routeProvider', function($routeProvider) {
         .when('/home', {
             templateUrl: 'templates/home.html',
             controller: 'HomeCtrl'
-    })
+        })
         .when('/company', {
             templateUrl: 'templates/company.html',
             controller: 'CompanyCtrl'
-    })
+        })
+        .when('/presskit', {
+            templateUrl: 'templates/presskit.html',
+            controller: 'PresskitCtrl'
+        })
         .otherwise('/home');
 }]);
 
@@ -46,7 +50,7 @@ app.controller('CompanyCtrl', function CompanyCtrl(greeting) {
     first.greeting = greeting;
 });
 
-app.controller('SecondCtrl', function SecondCtrl(greeting) {
+app.controller('PresskitCtrl', function PresskitCtrl(greeting) {
     var second = this;
     second.greeting = greeting;
 });
