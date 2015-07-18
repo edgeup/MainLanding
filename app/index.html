@@ -34,7 +34,7 @@
 
 	<!-- TODO: Make these local instead of CDN -->
 	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="app.js"></script>
 
 </head>
@@ -49,18 +49,13 @@
 	<nav class="navdrawer-container promote-layer">
 		<h4>Navigation</h4>
 		<ul>
-			<li ui-sref="home"><a>HomeTemplate</a></li>
-			<li ui-sref="first"><a>FirstTemplate</a></li>
-			<li ui-sref="second"><a>SecondTemplate</a></li>
-			<li><a href="#hello">Hello</a></li>
-			<li><a href="#get-started">Get Started</a></li>
-			<li><a href="styleguide.html">Style Guide</a></li>
+			<li><a href="#/home">Home</a></li>
+			<li><a href="#/company">About Us</a></li>
 		</ul>
 	</nav>
 
 	<main>
-		<ui-view>
-		</ui-view>
+		<ng-view></ng-view>
 	</main>
 </div><!-- /.appWrapper -->
 

@@ -65,7 +65,6 @@ body.open {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 auto;
-  border-top: $brand_color-ltblue 5px solid;
 }
 
 .app-bar.open,
@@ -195,11 +194,6 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.navdrawer-container ul li a:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  outline: 0;
-}
-
 .navdrawer-container ul li a:active {
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -291,7 +285,6 @@ main {
   .navdrawer-container ul li {
     border: none;
 	flex: auto;
-	cursor: pointer;
   }
 
   main {

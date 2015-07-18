@@ -1,37 +1,35 @@
+'use strict'
+
+
 // Angular Init
-var app = angular.module("euApp", ["ui.router"]);
+var app = angular.module('euApp', ['ngRoute']);
 
 
 
 
 
 // Router
-app.config(function config($stateProvider) {
-    $stateProvider.state("home", {
-        url: "/",
-        controller: "HomeCtrl as home",
-        templateUrl: "templates/home.html"
-    });
-    $stateProvider.state("first", {
-        url: "/first",
-        controller: "FirstCtrl as first",
-        templateUrl: "templates/first.html"
-    });
-    $stateProvider.state("second", {
-        url: "/second",
-        controller: "SecondCtrl as second",
-        templateUrl: "templates/second.html"
-    });
-});
+app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider
+        .when('/home', {
+            templateUrl: 'templates/home.html',
+            controller: 'HomeCtrl'
+    })
+        .when('/company', {
+            templateUrl: 'templates/company.html',
+            controller: 'CompanyCtrl'
+    })
+        .otherwise('/home');
+}]);
 
 
 
 
 
 // Greeting Service
-app.service("greeting", function Greeting() {
+app.service('greeting', function Greeting() {
     var greeting = this;
-    greeting.message = "Default";
+    greeting.message = 'Default';
 });
 
 
@@ -39,16 +37,16 @@ app.service("greeting", function Greeting() {
 
 
 // Controllers
-app.controller("HomeCtrl", function HomeCtrl() {
+app.controller('HomeCtrl', function HomeCtrl() {
     var home = this;
 });
 
-app.controller("FirstCtrl", function FirstCtrl(greeting) {
+app.controller('CompanyCtrl', function CompanyCtrl(greeting) {
     var first = this;
     first.greeting = greeting;
 });
 
-app.controller("SecondCtrl", function SecondCtrl(greeting) {
+app.controller('SecondCtrl', function SecondCtrl(greeting) {
     var second = this;
     second.greeting = greeting;
 });
