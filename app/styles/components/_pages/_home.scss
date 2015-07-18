@@ -1,18 +1,10 @@
 /**
 *
-* Home hero section
+* Home Page Styles
 *
 **/
 
-
-$brand_color-blueGrey1: #ECEFF1;
-$brand_color-blueGrey0: #CFD8DC;
-$brand_color-highlight0: orange;
-$brand_color-teal: #48B6AC;
-$brand_color-ltblue: #41a7e1;
-$brand_color-dkblue: #1b3644;
-$brand_color-grey: #424242;
-$brand_color-black: #111;
+// Hero Styles
 
 .home-hero {
   background-color: black;
@@ -33,6 +25,32 @@ $brand_color-black: #111;
   h2 {
     text-align: center;
   }
+  button {
+	width: 60px;
+	height: 60px;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	display: inline-block;
+	-webkit-transition: background-color 0.2s ease-out;
+	transition: background-color 0.2s ease-out;
+	-webkit-tap-highlight-color: transparent;
+	img {
+	  height: 24px;
+	  width: 24px;
+	}
+	&:hover {
+	  background-color: rgba(255, 255, 255, 0.1);
+	}
+	&:focus {
+	  background-color: rgba(255, 255, 255, 0.2);
+	  outline: 0;
+	}
+	&:active {
+	  background-color: rgba(255, 255, 255, 0.4);
+	}
+  }
 }
 
 .blue-line {
@@ -45,6 +63,11 @@ $brand_color-black: #111;
   background-color: $brand_color-teal;
 }
 
+
+
+
+
+// Info Section
 
 .info-section {
   background-color: #1b3644;
@@ -60,6 +83,12 @@ $brand_color-black: #111;
     padding-bottom: 40px;
   }
 }
+
+
+
+
+
+// Video Section
 
 .video-section {
   background-color: $brand_color-grey;
@@ -127,6 +156,12 @@ $brand_color-black: #111;
   }
 }
 
+
+
+
+
+// App Highlight
+
 .appHighlight {
   background-image: url('../images/mobileHighlight.png');
   background-size: cover;
@@ -135,6 +170,12 @@ $brand_color-black: #111;
     color: white;
   }
 }
+
+
+
+
+
+// App Benefits
 
 .winLeague {
   background-image: url('../images/leagueBG.png');
@@ -146,9 +187,21 @@ $brand_color-black: #111;
   }
 }
 
+
+
+
+
+// Cognitive News Demo
+
 .cogNewsDemo {
   padding-bottom: 80px;
 }
+
+
+
+
+
+// Footer
 
 footer {
   padding-top: 40px;

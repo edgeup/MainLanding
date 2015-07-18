@@ -1,41 +1,59 @@
-angular.module("app", ["ui.router"])
+// Angular Init
 
-    .config(function config($stateProvider) {
-        $stateProvider.state("home", {
-            url: "",
-            controller:"HomeCtrl as home",
-            templateUrl: "templates/home.html"
-        })
-        $stateProvider.state("first", {
-            url: "/first",
-            controller:"FirstCtrl as first",
-            templateUrl: "templates/first.html"
-        })
-        $stateProvider.state("second", {
-            url:"/second",
-            controller:"SecondCtrl as second",
-            templateUrl: "templates/second.html"
-        })
-    })
+var app = angular.module("app", ["ui.router"]);
 
-    .service("greeting", function Greeting() {
-        var greeting = this;
 
-        greeting.message = "Default";
-    })
 
-    .controller ("HomeCtrl", function HomeCtrl() {
+
+
+// Router
+
+app.config(function config($stateProvider) {
+    $stateProvider.state("home", {
+        url: "",
+        controller: "HomeCtrl as home",
+        templateUrl: "templates/home.html"
+    });
+    $stateProvider.state("first", {
+        url: "/first",
+        controller: "FirstCtrl as first",
+        templateUrl: "templates/first.html"
+    });
+    $stateProvider.state("second", {
+        url: "/second",
+        controller: "SecondCtrl as second",
+        templateUrl: "templates/second.html"
+    });
+});
+
+
+
+
+
+// Greeting Service
+
+app.service("greeting", function Greeting() {
+    var greeting = this;
+
+    greeting.message = "Default";
+});
+
+
+
+
+
+// Controllers
+
+app.controller("HomeCtrl", function HomeCtrl() {
     var home = this;
-    })
+});
 
-    .controller ("FirstCtrl", function FirstCtrl(greeting) {
+app.controller("FirstCtrl", function FirstCtrl(greeting) {
     var first = this;
-
     first.greeting = greeting;
-    })
+});
 
-    .controller ("SecondCtrl", function SecondCtrl(greeting) {
+app.controller("SecondCtrl", function SecondCtrl(greeting) {
     var second = this;
-
     second.greeting = greeting;
-    })
+});
