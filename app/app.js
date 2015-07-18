@@ -34,7 +34,6 @@ app.config(function config($stateProvider) {
 
 app.service("greeting", function Greeting() {
     var greeting = this;
-
     greeting.message = "Default";
 });
 
