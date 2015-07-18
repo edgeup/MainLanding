@@ -1,16 +1,14 @@
 // Angular Init
-
-var app = angular.module("app", ["ui.router"]);
+var app = angular.module("euApp", ["ui.router"]);
 
 
 
 
 
 // Router
-
 app.config(function config($stateProvider) {
     $stateProvider.state("home", {
-        url: "",
+        url: "/",
         controller: "HomeCtrl as home",
         templateUrl: "templates/home.html"
     });
@@ -31,7 +29,6 @@ app.config(function config($stateProvider) {
 
 
 // Greeting Service
-
 app.service("greeting", function Greeting() {
     var greeting = this;
     greeting.message = "Default";
@@ -42,7 +39,6 @@ app.service("greeting", function Greeting() {
 
 
 // Controllers
-
 app.controller("HomeCtrl", function HomeCtrl() {
     var home = this;
 });

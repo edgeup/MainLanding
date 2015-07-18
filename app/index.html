@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="" ng-app="app">
+<html lang="en" ng-app="euApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,29 +33,36 @@
 	<link rel="stylesheet" href="styles/main.css">
 
 	<!-- TODO: Make these local instead of CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="app.js"></script>
 
 </head>
 <body>
+<header class="app-bar promote-layer">
+	<div class="app-bar-container">
+		<button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
+	</div>
+</header>
 
-<nav class="navdrawer-container promote-layer">
-	<h4>Navigation</h4>
-	<ul>
-		<li ui-sref="home"><a>HomeTemplate</a></li>
-		<li ui-sref="first"><a>FirstTemplate</a></li>
-		<li ui-sref="second"><a>SecondTemplate</a></li>
-		<li><a href="#hello">Hello</a></li>
-		<li><a href="#get-started">Get Started</a></li>
-		<li><a href="styleguide.html">Style Guide</a></li>
-	</ul>
-</nav>
+<div class="appWrapper">
+	<nav class="navdrawer-container promote-layer">
+		<h4>Navigation</h4>
+		<ul>
+			<li ui-sref="home"><a>HomeTemplate</a></li>
+			<li ui-sref="first"><a>FirstTemplate</a></li>
+			<li ui-sref="second"><a>SecondTemplate</a></li>
+			<li><a href="#hello">Hello</a></li>
+			<li><a href="#get-started">Get Started</a></li>
+			<li><a href="styleguide.html">Style Guide</a></li>
+		</ul>
+	</nav>
 
-<main>
-	<ui-view>
-	</ui-view>
-</main>
+	<main>
+		<ui-view>
+		</ui-view>
+	</main>
+</div><!-- /.appWrapper -->
 
 <!-- build:js scripts/main.min.js -->
 <script src="scripts/main.js"></script>

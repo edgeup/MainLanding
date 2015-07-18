@@ -7,7 +7,7 @@
 // Hero Styles
 
 .home-hero {
-  background-color: black;
+  background-color: $brand_color-dkblue;
   background-image: url('../images/heroBG.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,32 +24,6 @@
   }
   h2 {
     text-align: center;
-  }
-  button {
-	width: 60px;
-	height: 60px;
-	background-image: none;
-	background-color: transparent;
-	border: none;
-	padding: 0;
-	display: inline-block;
-	-webkit-transition: background-color 0.2s ease-out;
-	transition: background-color 0.2s ease-out;
-	-webkit-tap-highlight-color: transparent;
-	img {
-	  height: 24px;
-	  width: 24px;
-	}
-	&:hover {
-	  background-color: rgba(255, 255, 255, 0.1);
-	}
-	&:focus {
-	  background-color: rgba(255, 255, 255, 0.2);
-	  outline: 0;
-	}
-	&:active {
-	  background-color: rgba(255, 255, 255, 0.4);
-	}
   }
 }
 

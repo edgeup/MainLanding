@@ -33,6 +33,7 @@
 @import '_modules/did-you-know';
 @import '_modules/toc';
 @import '_modules/next-lessons';
+@import "_modules/nav";
 
 // Components
 @import '_components/grid';
@@ -54,7 +55,7 @@
 // Pages
 @import '_pages/styleguide';
 @import '_pages/page-resources';
-@import '_pages/home';
+@import '_pages/page-home';
 
 // Make sure this is last to override anything else :)
 @import 'helper';

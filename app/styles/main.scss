@@ -13,19 +13,25 @@
  */
 @import 'components/components';
 
+
+// Generic Variables
+$sheet-maxWidth: 864px;
+
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  background: $brand_color-dkblue;
+  background: -webkit-linear-gradient(top, $brand_color-dkblue 0%, $brand_color-black 100%);
+  background-attachment: fixed;
 }
 
 body {
   position: relative;
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  background-color: #fff;
   box-sizing: border-box;
   min-height: 100%;
 }
@@ -125,8 +131,10 @@ ol {
   top: 0;
   bottom: 0;
   width: 250px;
+  max-width: $sheet-maxWidth;
+  text-align: center;
   height: 100%;
-  background-color: #3367D6;
+  background-color: darken($brand_color-dkblue, 8%);
   color: #fefefe;
   -webkit-transform: translate(-250px, 0);
           transform: translate(-250px, 0);
@@ -197,7 +205,6 @@ main {
 }
 
 main {
-  margin: 0 auto;
   /* Height of the header */
   padding: 0;
   min-height: 100%;
@@ -209,6 +216,13 @@ main {
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
+
+  .appWrapper {
+	max-width: $sheet-maxWidth;
+	margin: 0 auto;
+	box-shadow: 0 0 0.5rem rgba($brand_color-black, 0.5);
+  }
+
   .app-bar {
     position: relative;
   }
@@ -220,12 +234,7 @@ main {
   }
 
   .app-bar-container {
-    display: block;
-    height: 130px;
-    max-width: 864px;
-    padding: 0 16px;
-    box-sizing: border-box;
-    background-color: #4285f4;
+    display: none;
   }
 
   .app-bar .logo {
@@ -281,10 +290,12 @@ main {
 
   .navdrawer-container ul li {
     border: none;
+	flex: auto;
+	cursor: pointer;
   }
 
   main {
-    max-width: 864px;
+	max-width: $sheet-maxWidth;
     padding-top: 0;
     min-height: initial;
   }
