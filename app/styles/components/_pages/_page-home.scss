@@ -23,6 +23,12 @@ img.sit {
   margin-bottom: -4rem;
 }
 
+// This needs to go wherever site level tweaks are going.
+
+.button--primary {
+  width: 100%;
+}
+
 
 
 
@@ -122,17 +128,17 @@ img.sit {
     color: white;
   }
   .shareButtons {
-    width: 290px;
+    width: 100%;
     margin: 0 auto;
     button {
       float: left;
       border: none;
-      width: 135px;
+      width: 49%;
       margin-top: 15px;
     }
     .twitter {
       background-color: #4099FF;
-      margin-right: 20px;
+      margin-right: 2%;
     }
     .facebook {
       background-color: #3B5998;
@@ -190,6 +196,22 @@ img.sit {
 // Cognitive News Demo
 
 .cogNewsDemo {
+  .globeIcon {
+    position: relative;
+    left: -38px;
+    bottom: 45px;
+  }
+  .watsonButton {
+    height: 50px;
+    left: -50px;
+    text-align: center;
+    background: linear-gradient(to right, #0D2734 , #163B48);
+    span {
+      left: -30px;
+      top: -30px;
+      position: relative;
+    }
+  }
 }
 
 
@@ -202,8 +224,27 @@ footer {
   padding-top: 40px;
   text-align: center;
   background-color: #254E5E;
+  padding: 4rem 1.5rem;
+  .shareButtons {
+    margin-top: 1rem;
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0;
+      border: none;
+      i {
+        color: #254E5E;
+        font-size: 25px;
+        padding-top: 5px;
+      }
+    }
+  }
   .twitter {
     margin-right: 20px;
+  }
+  a {
+    width: 100%;
   }
   p {
     color: white;
@@ -259,6 +300,11 @@ footer {
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
 
+  // Button Tweak
+  .button--primary {
+    max-width: 500px;
+  }
+
   // Padding Tweak
   section:not(.home-hero) {
 	padding-left: 4rem;
@@ -275,5 +321,11 @@ footer {
 	img {
 	  max-width: 600px;
 	}
+  }
+
+  // Social Sharing Tweak
+  .shareButtons {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
