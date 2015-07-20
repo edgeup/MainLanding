@@ -131,16 +131,20 @@ img.sit {
   }
   .shareButtons {
     width: 100%;
+    max-width: $btn_width;
     margin: 0 auto;
-    button {
-      float: left;
+    .btn {
+      display: inline-block;
+      min-width: 4rem;
+      text-decoration: none;
       border: none;
-      width: 49%;
-      margin-top: 15px;
+      margin: 1rem 0.25rem 0;
+      color: $brand_color-blueGrey1;
+      padding: 1rem;
+      font-size: 1.5rem;
     }
     .twitter {
       background-color: #4099FF;
-      margin-right: 2%;
     }
     .facebook {
       background-color: #3B5998;
