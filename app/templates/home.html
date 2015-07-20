@@ -1,5 +1,7 @@
 <section class="home-hero">
     <div class="template-content">
+        <a href="#ignore-click" class="button--primary" ng-show="crowdfundingStatus">Back Our Kickstarter</a>
+        <div class="clear"></div>
         <img src="../images/edgeUpLogoFull.png">
         <h1>
 	        Fantasy Football
@@ -12,7 +14,7 @@
     </div>
 </section>
 
-<section class="info-section">
+<section class="info-section firstInfo">
     <h2>Be Competitive and Save Time</h2>
     <div class="blue-line"></div>
     <p>We use big data algorithms to filter sports news, providing you
@@ -77,13 +79,13 @@
     </p>
 
     <a href="#ignore-click" class="button--primary watsonButton">
-        <img src="images/watsonGlobeIcon.svg" class="globeIcon">
+        <img src="images/watsonIcon.png" class="globeIcon">
         <span>Try News Demo</span>
     </a>
 </section>
 
 <footer>
-    <a href="#ignore-click" class="button--primary">Learn More At Kickstarter</a>
+    <a href="#ignore-click" class="button--primary" ng-show="crowdfundingStatus">Learn More At Kickstarter</a>
     <div class="shareButtons">
         <div class="btn">
             <a href="#" class="fa fa-twitter"></a>
