@@ -2917,7 +2917,7 @@ img.sit {
 .template-content {
   padding-top: 1rem; }
 
-.button--primary {
+.button--primary, .button--primary:active, .button--primary:visited {
   width: 100%;
   border-radius: .25rem;
   background-color: rgba(27, 54, 68, 0.5);
