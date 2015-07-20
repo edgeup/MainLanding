@@ -88,6 +88,23 @@ img.sit {
   }
 }
 
+// Email Signup
+.emailForm {
+  margin-top: 2rem;
+  .emailInput, .emailInput:hover {
+    margin-bottom: 0;
+    border-bottom: .07rem;
+    border-radius: .25rem .25rem 0 0;
+  }
+
+  .emailButton, .emailButton:hover {
+    margin-top: 0;
+    top: .07rem;
+    border-radius: 0 0 .25rem .25rem;
+  }
+}
+
+
 .blue-line {
   position: relative;
   display: inline-block;
@@ -372,6 +389,14 @@ footer {
   // Button Tweak
   .button--primary {
     max-width: 275px;
+  }
+
+  // Email Signup
+
+  .emailForm {
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 
   // Padding Tweak
