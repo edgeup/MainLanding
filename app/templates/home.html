@@ -22,14 +22,14 @@
     <img src="../images/teamInfoUI.png" class="sit">
 </section>
 
-<section class="video-section" ng-show="crowdfundingStatus">
+<section class="video-section" >
     <h2>Listen to Ilya talk</h2>
     <div class="blue-line"></div>
     <div class="embed-responsive embed-responsive-16by9">
         <div id="player"></div>
     </div>
-    <a href="#ignore-click" class="button--primary">Back Our Kickstarter</a>
-    <div class="shareCampaign">
+    <div class="shareCampaign" ng-show="crowdfundingStatus">
+	    <a href="#ignore-click" class="button--primary">Back Our Kickstarter</a>
         <p>Share The Campaign</p>
         <div class="blue-line"></div>
         <div class="shareButtons">
@@ -41,21 +41,22 @@
             </a>
         </div>
         <div class="clear"></div>
-        <div class="appearances">
-            <p>Appearances</p>
-            <div class="blue-line"></div>
-            <div class="logosHolder">
-                <img src="../images/cnnLogo.png">
-                <img src="../images/espnLogo.png">
-                <img src="../images/watsonLogo.png">
-            </div>
-            <div class="clear"></div>
-        </div>
     </div>
+	<div class="appearances">
+	<p>Appearances</p>
+	<div class="blue-line"></div>
+	<div class="logosHolder">
+		<div class="logo _cnn"></div>
+		<div class="logo _watson"></div>
+		<div class="logo _espn"></div>
+	</div>
+	<div class="clear"></div>
+</div>
 </section>
 
 <section class="info-section appHighlight">
     <h2>Your New Fantasy Coach</h2>
+    <div class="blue-line"></div>
     <p>The Edge Up mobile app supplements pre-existing fantasy league platforms, synthesizing insights for players, coaches, and analysis.
     </p>
     <img src="../images/teamInfoUI.png" class="sit">

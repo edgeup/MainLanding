@@ -164,6 +164,26 @@ textarea[contenteditable] {
 * Main Stylesheet For Visual Style Guide
 *
 **/
+/*
+ *      MAKING FANTASY FOOTBALL FUN | MAKING FANTASY FOOTBALL FUN | MAKING FANTASY FOOTBALL FUN
+ *      ______ _____   _____ ______   _    _ _____     _____ _____   ____  _____ _______ _____
+ *     |  ____|  __ \ / ____|  ____| | |  | |  __ \   / ____|  __ \ / __ \|  __ \__   __/ ____|
+ *     | |__  | |  | | |  __| |__    | |  | | |__) | | (___ | |__) | |  | | |__) | | | | (___
+ *     |  __| | |  | | | |_ |  __|   | |  | |  ___/   \___ \|  ___/| |  | |  _  /  | |  \___ \
+ *     | |____| |__| | |__| | |____  | |__| | |       ____) | |    | |__| | | \ \  | |  ____) |
+ *     |______|_____/ \_____|______|  \____/|_|      |_____/|_|     \____/|_|  \_\ |_| |_____/
+ *
+ *      MAKING FANTASY FOOTBALL FUN | MAKING FANTASY FOOTBALL FUN | MAKING FANTASY FOOTBALL FUN
+ *
+ *      ---------------------------------------------------------------------------------------
+ *
+ *      We see you poking around. Think you can do it better? Email tech@edgeupsports.com. =)
+ *
+ *      ---------------------------------------------------------------------------------------
+ */
+/* ******************************
+    BRAND COLORS
+**************************** */
 /**
 *
 * Utils
@@ -1705,146 +1725,27 @@ div.highlight > pre > code .il, code .highlight .il {
       font-size: 210px;
       right: 120px; } }
 
-/**
-*
-* Home hero section
-*
-**/
-.home-hero {
-  background-color: black;
-  background-image: url("../images/heroBG.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  color: #fff;
-  font-weight: bold;
-  padding: 0 16px;
-  padding-top: 80px;
-  text-align: center;
-  padding-bottom: 90px; }
-  .home-hero h1 {
-    text-align: center; }
-  .home-hero h2 {
-    text-align: center; }
-
-.blue-line {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  height: 2px;
-  width: 75px;
-  margin-bottom: 20px 0;
-  background-color: #48B6AC; }
-
-.info-section {
-  background-color: #1b3644;
-  text-align: center;
-  padding: 0 16px;
-  padding-top: 80px; }
-  .info-section h2 {
-    color: white; }
-  .info-section p {
-    color: #3B708B;
-    padding-bottom: 40px; }
-
-.video-section {
-  background-color: #424242;
-  background-image: url("../images/lineBG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 0 16px;
-  padding-top: 80px; }
-  .video-section h2 {
-    color: white; }
-  .video-section .pitchVid {
-    border-top: 1px solid rgba(236, 239, 241, 0.1);
-    background: url("../../images/basic_cover.jpg") no-repeat #0c131a;
-    background-size: cover;
-    padding: 6rem 0;
-    overflow: hidden; }
-    .video-section .pitchVid h3 {
-      color: rgba(236, 239, 241, 0.75); }
-    .video-section .pitchVid .embed-responsive, .video-section .pitchVid iframe {
-      border: 0;
-      border-radius: 1rem; }
-    .video-section .pitchVid .embed-responsive {
-      box-shadow: 0 0 2rem rgba(17, 17, 17, 0.5); }
-
-.shareCampaign p {
-  color: white; }
-.shareCampaign .shareButtons {
-  width: 290px;
-  margin: 0 auto; }
-  .shareCampaign .shareButtons button {
-    float: left;
-    border: none;
-    width: 135px;
-    margin-top: 15px; }
-  .shareCampaign .shareButtons .twitter {
-    background-color: #4099FF;
-    margin-right: 20px; }
-  .shareCampaign .shareButtons .facebook {
-    background-color: #3B5998; }
-
-.appearances .logosHolder {
-  display: flex;
-  flex-flow: row wrap;
-  height: 300px; }
-  .appearances .logosHolder img {
-    width: 130px;
-    margin: auto; }
-
-.appHighlight {
-  background-image: url("../images/mobileHighlight.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .appHighlight p {
-    color: white; }
-
-.winLeague {
-  background-image: url("../images/leagueBG.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: left; }
-  .winLeague h3 {
-    color: white; }
-
-.cogNewsDemo {
-  padding-bottom: 80px; }
-
-footer {
-  padding-top: 40px;
-  text-align: center;
-  background-color: #254E5E; }
-  footer .twitter {
-    margin-right: 20px; }
-  footer p {
-    color: white; }
-  footer span {
-    font-size: 10px;
-    color: white; }
-
-.embed-responsive {
-  position: relative;
-  display: block;
-  height: 0;
+button.menu {
+  width: 60px;
+  height: 60px;
+  background-image: none;
+  background-color: transparent;
+  border: none;
   padding: 0;
-  overflow: hidden; }
-
-.embed-responsive-16by9 {
-  padding-bottom: 56.25%; }
-
-.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0; }
+  display: inline-block;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  -webkit-tap-highlight-color: transparent; }
+  button.menu img {
+    height: 24px;
+    width: 24px; }
+  button.menu:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  button.menu:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 0; }
+  button.menu:active {
+    background-color: rgba(255, 255, 255, 0.4); }
 
 /**
 *
@@ -3000,6 +2901,268 @@ object {
 
 /**
 *
+* Home Page Styles
+*
+**/
+section {
+  box-shadow: 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.2) inset;
+  text-align: center;
+  padding: 4rem 1.5rem; }
+  section * {
+    z-index: 2; }
+
+img.sit {
+  margin-bottom: -4rem; }
+
+.template-content {
+  padding-top: 1rem; }
+
+.button--primary {
+  width: 100%;
+  border-radius: .25rem;
+  background-color: rgba(27, 54, 68, 0.5);
+  border: 0.15rem rgba(255, 255, 255, 0.5) solid;
+  font-size: 1.5rem;
+  padding: 12px;
+  transition: background-color 0.5s ease; }
+
+.button--primary:hover {
+  border: 0.15rem rgba(255, 255, 255, 0.5) solid;
+  border-radius: .25rem;
+  background-color: rgba(27, 54, 68, 0.9); }
+
+.home-hero {
+  background-color: #1b3644;
+  background-image: url("../images/heroBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10rem; }
+  .home-hero img {
+    padding-top: 2rem; }
+  .home-hero h1 {
+    text-align: center;
+    background-color: rgba(27, 54, 68, 0.75);
+    padding: 1rem 0 1.5rem;
+    margin: 2rem -1.5rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 0;
+    border-right: 0;
+    color: #41a7e1;
+    font-size: 2.75rem;
+    font-weight: bold; }
+    .home-hero h1 .wordbreak {
+      display: block; }
+  .home-hero h2 {
+    text-align: center;
+    opacity: 0.75;
+    font-size: 1.75rem; }
+
+.blue-line {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 2px;
+  width: 75px;
+  margin: 1.5rem 0 1rem;
+  background-color: #41a7e1; }
+
+.info-section {
+  background-color: #1b3644; }
+  .info-section h2 {
+    color: white;
+    margin-bottom: 3rem; }
+  .info-section p {
+    color: #41a7e1;
+    padding: 0 0 3rem;
+    margin: 0 auto;
+    max-width: 400px; }
+
+.firstInfo h2 {
+  margin-bottom: 0; }
+
+.video-section {
+  background-color: #424242;
+  background-image: url("../images/lineBG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .video-section h2 {
+    color: white; }
+  .video-section .pitchVid {
+    border-top: 1px solid rgba(236, 239, 241, 0.1);
+    background: url("../../images/basic_cover.jpg") no-repeat #0c131a;
+    background-size: cover;
+    padding: 6rem 0;
+    overflow: hidden; }
+    .video-section .pitchVid h3 {
+      color: rgba(236, 239, 241, 0.75); }
+
+.shareCampaign p {
+  color: #CFD8DC; }
+.shareCampaign .shareButtons {
+  width: 100%;
+  max-width: 12.5rem;
+  margin: 0 auto; }
+  .shareCampaign .shareButtons .btn {
+    display: inline-block;
+    min-width: 4rem;
+    text-decoration: none;
+    border: none;
+    margin: 1rem 0.25rem 0;
+    color: #ECEFF1;
+    padding: 1rem;
+    font-size: 1.5rem; }
+  .shareCampaign .shareButtons .twitter {
+    background-color: #4099FF; }
+  .shareCampaign .shareButtons .facebook {
+    background-color: #3B5998; }
+
+.appearances p {
+  color: #CFD8DC; }
+.appearances .logosHolder {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 500px;
+  margin: 0 auto; }
+  .appearances .logosHolder .logo {
+    height: 7rem;
+    flex: 1;
+    margin: 0 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+    .appearances .logosHolder .logo._cnn {
+      background-image: url("../images/cnnLogo.png"); }
+    .appearances .logosHolder .logo._watson {
+      background-image: url("../images/watsonLogo.png"); }
+    .appearances .logosHolder .logo._espn {
+      background-image: url("../images/espnLogo.png"); }
+
+.appHighlight {
+  background-image: url("../images/mobileHighlight.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .appHighlight h2 {
+    margin-bottom: 0; }
+
+.winLeague {
+  background-image: url("../images/leagueBG.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .winLeague h3 {
+    color: white; }
+
+.cogNewsDemo .globeIcon {
+  position: relative;
+  left: -38px;
+  bottom: 45px; }
+.cogNewsDemo .watsonButton, .cogNewsDemo .watsonButton:active {
+  height: 50px;
+  left: -50px;
+  text-align: center;
+  background: linear-gradient(to right, #0D2734, #163B48);
+  transition: all 0.5s; }
+  .cogNewsDemo .watsonButton span, .cogNewsDemo .watsonButton:active span {
+    left: -30px;
+    top: -30px;
+    position: relative; }
+  .cogNewsDemo .watsonButton:hover, .cogNewsDemo .watsonButton:active:hover {
+    transition: all 0.5s;
+    background: #0d191f; }
+
+footer {
+  text-align: center;
+  background-color: rgba(65, 167, 225, 0.25);
+  padding: 4rem 1.5rem; }
+  footer .shareButtons {
+    margin: 1rem auto 0;
+    display: flex;
+    max-width: 12.5rem; }
+    footer .shareButtons .btn {
+      flex: auto; }
+    footer .shareButtons a, footer .shareButtons a:active, footer .shareButtons a:visited {
+      text-decoration: none;
+      color: rgba(27, 54, 68, 0.9);
+      background-color: rgba(207, 216, 220, 0.9);
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%;
+      max-width: 4rem;
+      margin: 0 0.5rem;
+      transition: background 0.5s; }
+    footer .shareButtons a:hover {
+      background-color: rgba(207, 216, 220, 0.5); }
+  footer .twitter {
+    margin-right: 20px; }
+  footer a {
+    width: 100%; }
+  footer p {
+    color: white; }
+  footer span {
+    font-size: 10px;
+    color: white; }
+
+.embed-responsive, iframe {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem; }
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 0 0 2rem rgba(17, 17, 17, 0.5); }
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%; }
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.wordbreak {
+  white-space: pre; }
+
+/** Larger Screens - desktops and tablets **/
+@media all and (min-width: 990px) {
+  .button--primary {
+    max-width: 275px; }
+
+  section:not(.home-hero) {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+
+  .home-hero h1 {
+    font-size: 4rem; }
+
+  .info-section img, .appHighlight img {
+    max-width: 600px; }
+
+  .appearances {
+    margin-top: 4rem; }
+    .appearances .logosHolder {
+      display: flex;
+      flex-flow: row wrap;
+      height: auto; }
+      .appearances .logosHolder img {
+        width: auto;
+        max-height: 100px; } }
+/**
+*
 * Helper
 *
 **/
@@ -3144,13 +3307,15 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #1b3644;
+  background: -webkit-linear-gradient(top, #1b3644 0%, #111 100%);
+  background-attachment: fixed; }
 
 body {
   position: relative;
   font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  background-color: #fff;
   box-sizing: border-box;
   min-height: 100%; }
 
@@ -3179,8 +3344,7 @@ body.open {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 0 auto;
-  border-top: #48b6ac 5px solid; }
+  margin: 0 auto; }
 
 .app-bar.open,
 .app-bar.open ~ main {
@@ -3215,32 +3379,6 @@ body.open {
   flex-direction: row;
   z-index: 2; }
 
-.app-bar button {
-  width: 60px;
-  height: 60px;
-  background-image: none;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  display: inline-block;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  -webkit-tap-highlight-color: transparent; }
-
-.app-bar button img {
-  height: 24px;
-  width: 24px; }
-
-.app-bar button:hover {
-  background-color: rgba(255, 255, 255, 0.1); }
-
-.app-bar button:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: 0; }
-
-.app-bar button:active {
-  background-color: rgba(255, 255, 255, 0.4); }
-
 .promote-layer {
   /*
   This may promote the layer to a composited
@@ -3265,8 +3403,10 @@ ol {
   top: 0;
   bottom: 0;
   width: 250px;
+  max-width: 864px;
+  text-align: center;
   height: 100%;
-  background-color: #3367D6;
+  background-color: #0f1f27;
   color: #fefefe;
   -webkit-transform: translate(-250px, 0);
   transform: translate(-250px, 0);
@@ -3308,7 +3448,7 @@ main {
 .navdrawer-container ul li {
   border-bottom-style: solid;
   border-width: 1px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.25);
   padding: 0; }
 
 .navdrawer-container ul li::before {
@@ -3317,22 +3457,22 @@ main {
 .navdrawer-container ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2); }
 
-.navdrawer-container ul li a:focus {
-  background-color: rgba(255, 255, 255, 0.3);
-  outline: 0; }
-
 .navdrawer-container ul li a:active {
   background-color: rgba(255, 255, 255, 0.4); }
 
 main {
-  margin: 0 auto;
   /* Height of the header */
   padding: 0;
-  min-height: 100%; }
-
+  min-height: 100%;
+  background: #1b3644; }
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
+  .appWrapper {
+    max-width: 864px;
+    margin: 0 auto;
+    box-shadow: 0 0 0.5rem rgba(17, 17, 17, 0.5); }
+
   .app-bar {
     position: relative; }
 
@@ -3342,12 +3482,7 @@ main {
     transform: translate(0px, 0); }
 
   .app-bar-container {
-    display: block;
-    height: 130px;
-    max-width: 864px;
-    padding: 0 16px;
-    box-sizing: border-box;
-    background-color: #4285f4; }
+    display: none; }
 
   .app-bar .logo {
     float: left;
@@ -3394,7 +3529,8 @@ main {
     flex-direction: row; }
 
   .navdrawer-container ul li {
-    border: none; }
+    border: none;
+    flex: auto; }
 
   main {
     max-width: 864px;

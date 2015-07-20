@@ -148,7 +148,7 @@ img.sit {
 }
 .shareCampaign {
   p {
-    color: white;
+    color: $brand_color-blueGrey0;
   }
   .shareButtons {
     width: 100%;
@@ -175,14 +175,32 @@ img.sit {
 }
 
 .appearances {
+  p {
+	color: $brand_color-blueGrey0;
+  }
   .logosHolder {
     display: flex;
     flex-flow: row wrap;
-    height: 300px;
-    img {
-      width: 130px;
-      margin: auto;
-    }
+	max-width: 500px;
+	margin: 0 auto;
+    .logo {
+	  $blocksize: 7rem;
+	  height: $blocksize;
+	  flex: 1;
+	  margin: 0 1rem;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: contain;
+	  &._cnn {
+		background-image: url('../images/cnnLogo.png');
+	  }
+	  &._watson {
+		background-image: url('../images/watsonLogo.png');
+	  }
+	  &._espn {
+		background-image: url('../images/espnLogo.png');
+	  }
+	}
   }
 }
 
@@ -196,8 +214,8 @@ img.sit {
   background-image: url('../images/mobileHighlight.png');
   background-size: cover;
   background-repeat: no-repeat;
-  p {
-    color: white;
+  h2 {
+    margin-bottom: 0;
   }
 }
 
@@ -228,17 +246,21 @@ img.sit {
     left: -38px;
     bottom: 45px;
   }
-  .watsonButton {
+  .watsonButton, .watsonButton:active {
     height: 50px;
     left: -50px;
     text-align: center;
     background: linear-gradient(to right, #0D2734 , #163B48);
-    transition: background 0.5s;
+	transition: all 0.5s;
     span {
       left: -30px;
       top: -30px;
       position: relative;
     }
+	&:hover {
+	  transition: all 0.5s;
+	  background: darken($brand_color-dkblue, 10%);
+	}
   }
 }
 
@@ -355,6 +377,20 @@ footer {
   .info-section, .appHighlight {
 	img {
 	  max-width: 600px;
+	}
+  }
+
+  // Appearances
+  .appearances {
+	margin-top: 4rem;
+	.logosHolder {
+	  display: flex;
+	  flex-flow: row wrap;
+	  height: auto;
+	  img {
+		width: auto;
+		max-height: 100px;
+	  }
 	}
   }
 }
