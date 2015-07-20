@@ -3030,18 +3030,25 @@ img.sit {
   max-width: 500px;
   margin: 0 auto; }
   .appearances .logosHolder .logo {
-    height: 7rem;
+    height: 9rem;
     flex: 1;
     margin: 0 1rem;
+    transition: opacity 0.25s;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
     .appearances .logosHolder .logo._cnn {
       background-image: url("../images/cnnLogo.png"); }
+    .appearances .logosHolder .logo._techco {
+      background-image: url("../images/techco.png"); }
+    .appearances .logosHolder .logo._startland {
+      background-image: url("../images/startland.png"); }
     .appearances .logosHolder .logo._watson {
       background-image: url("../images/watsonLogo.png"); }
     .appearances .logosHolder .logo._espn {
       background-image: url("../images/espnLogo.png"); }
+    .appearances .logosHolder .logo:hover {
+      opacity: 0.5; }
 
 .appHighlight {
   background-image: url("../images/mobileHighlight.png");

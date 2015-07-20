@@ -184,21 +184,31 @@ img.sit {
 	max-width: 500px;
 	margin: 0 auto;
     .logo {
-	  $blocksize: 7rem;
+	  $blocksize: 9rem;
 	  height: $blocksize;
 	  flex: 1;
 	  margin: 0 1rem;
+	  transition: opacity 0.25s;
 	  background-repeat: no-repeat;
 	  background-position: center;
 	  background-size: contain;
 	  &._cnn {
 		background-image: url('../images/cnnLogo.png');
 	  }
+	  &._techco {
+		background-image: url('../images/techco.png');
+	  }
+	  &._startland {
+		background-image: url('../images/startland.png');
+	  }
 	  &._watson {
 		background-image: url('../images/watsonLogo.png');
 	  }
 	  &._espn {
 		background-image: url('../images/espnLogo.png');
+	  }
+	  &:hover {
+		opacity: 0.5;
 	  }
 	}
   }
