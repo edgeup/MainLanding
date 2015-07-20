@@ -2942,6 +2942,8 @@ img.sit {
   font-weight: bold;
   text-align: center;
   padding-bottom: 10rem; }
+  .home-hero .hero_logo {
+    max-width: 150px; }
   .home-hero img {
     padding-top: 2rem; }
   .home-hero h1 {
@@ -3153,6 +3155,8 @@ footer {
     padding-left: 4rem;
     padding-right: 4rem; }
 
+  .home-hero .hero_logo {
+    max-width: 200px; }
   .home-hero h1 {
     font-size: 4rem; }
 

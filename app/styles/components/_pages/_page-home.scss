@@ -60,6 +60,9 @@ img.sit {
   font-weight: bold;
   text-align: center;
   padding-bottom: 10rem;
+  .hero_logo {
+	max-width: 150px;
+  }
   img {
     padding-top: 2rem;
   }
@@ -378,8 +381,13 @@ footer {
   }
 
   // Hero
-  .home-hero h1 {
-	font-size: 4rem;
+  .home-hero {
+	.hero_logo {
+	  max-width: 200px;
+	}
+	h1 {
+		font-size: 4rem;
+  	}
   }
 
   // Image Tweak
