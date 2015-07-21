@@ -88,22 +88,45 @@ img.sit {
   }
 }
 
-// Email Signup
-.emailForm {
-  margin-top: 2rem;
-  .emailInput, .emailInput:hover {
-    margin-bottom: 0;
-    border-bottom: .07rem;
-    border-radius: .25rem .25rem 0 0;
-  }
-
-  .emailButton, .emailButton:hover {
-    margin-top: 0;
-    top: .07rem;
-    border-radius: 0 0 .25rem .25rem;
-  }
+.emailStatus {
+  display: block;
+  color: white;
+  background-color: rgba($brand_color-highlight0, .5);
+  border-radius: .25rem;
 }
 
+.emailForm {
+  width: 100%;
+  padding-top: .5rem;
+  display: table;
+  position: relative;
+  .emailInput {
+    width: 100%;
+    background-color: white;
+    border-radius: .25rem;
+    color: $brand_color-ltblue;
+    height: 3.75rem;
+    margin-top: 0;
+    position: relative;
+    display: table-cell;
+    padding-right: 15rem;
+    &.ng-invalid-email {
+    }
+  }
+  .emailButton, .emailButton:hover {
+    margin-top: 0;
+    border-radius: 0 .25rem .25rem 0;
+    width: 20%;
+    height: 3.75rem;
+    position: relative;
+    border-left: none;
+    background-color: $brand_color-ltblue;
+    width: 15rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+}
 
 .blue-line {
   position: relative;
@@ -391,13 +414,15 @@ footer {
     max-width: 275px;
   }
 
+  .emailInput {
+    max-width: 100%;
+  }
+  .emailButton {
+    max-width: 100%;
+  }
+
   // Email Signup
 
-  .emailForm {
-    max-width: 280px;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
 
   // Padding Tweak
   section:not(.home-hero) {

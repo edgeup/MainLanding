@@ -13,29 +13,15 @@
         </h2>
     </div>
 
-    <div class="form emailForm">
-        <form action="//edgeupsports.us9.list-manage.com/subscribe/post?u=d6d6b0b823dfe186b05ddf364&amp;id=c5dfe4c66a"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-              class="validate" target="_blank" novalidate>
-            <input type="email" value="" name="EMAIL" class="emailInput button--primary" id="mce-EMAIL"
-                   placeholder="Enter Your Email" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <input type="text" name="b_d6d6b0b823dfe186b05ddf364_c5dfe4c66a" tabindex="-1" value="" style="display: none;">
-            <button type="submit"
-                    value="Get Early Access"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    class="button--primary emailButton">Get Early Access
-            </button>
-        </form>
-        <!--End mc_embed_signup-->
-
-        <!--
-        <input type="text" id="email" class="form-control" placeholder="Enter Your Email">
-        <button type="submit" id="signup" class="btn btn-primary">Get Early Access</button>
-        <!-->
-    </div>
+    <form name="emailForm" class="emailForm" id="emailForm">
+        <span ng-show="emailForm.email.$dirty && emailForm.email.$invalid" class="emailStatus">email is REALLY BAD</span>
+        <input class="button--primary emailInput" type="email" name="email" ng-model="email" placeholder="Email Address" />
+        <a class="emailButton button--primary">Submit Email</a>
+    </form>
 </section>
+
+
+
 
 <section class="info-section firstInfo">
     <h2>Be Competitive and Save Time</h2>

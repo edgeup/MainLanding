@@ -106,3 +106,5 @@ app.directive('youtube', function($window) {
 
 
 }());
+
+// Email validation
