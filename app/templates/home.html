@@ -1,0 +1,113 @@
+<section class="home-hero">
+    <div class="template-content">
+        <a class="button--primary" ng-show="crowdfundingStatus">Back Our Kickstarter</a>
+        <div class="clear"></div>
+        <img class="hero_logo" src="../images/edgeUpLogoFull.png">
+        <h1>
+	        Fantasy Football
+	        <span class="wordbreak">Can Be Fun Again</span>
+        </h1>
+        <h2>
+	        We’re taking the grind out
+	        <span class="wordbreak">of your weekly research.</span>
+        </h2>
+    </div>
+
+	<div class="wrapper_signup">
+		<p>To stay up to date about early access this season, sign up here.</p>
+		<!-- TODO: Show the validation error to only show when the button is clicked. Right now it's janky.-->
+		<form name="emailForm" class="emailForm" id="emailForm" ng-submit="submit()">
+			<span ng-show="emailForm.email.$dirty && emailForm.email.$invalid" class="emailStatus">Your email isn't formatted quite right yet</span>
+			<input class="button--primary emailInput" type="email" name="email" ng-model="email" placeholder="Email Address" />
+			<a class="emailButton button--primary">Submit Email</a>
+		</form>
+	</div>
+</section>
+
+
+
+
+<section class="info-section firstInfo bg_network">
+    <h2>Be Competitive and Save Time</h2>
+    <div class="blue-line"></div>
+    <p>We use big data algorithms to filter sports news, providing you
+        relevant information to your fantasy football team.</p>
+    <img src="../images/teamInfoUI.png" class="sit">
+</section>
+
+<section class="video-section bg_grid" >
+    <h2>Listen to Ilya talk</h2>
+    <div class="blue-line"></div>
+    <div class="embed-responsive embed-responsive-16by9">
+	    <youtube></youtube>
+    </div>
+    <div class="shareCampaign" ng-show="crowdfundingStatus">
+	    <a class="button--primary">Back Our Kickstarter</a>
+        <p>Share The Campaign</p>
+        <div class="blue-line"></div>
+        <div class="shareButtons">
+            <a href="#" class="twitter btn">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="facebook btn">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+	<div class="appearances">
+	<p>Appearances</p>
+	<div class="blue-line"></div>
+	<div class="logosHolder">
+		<a href="http://tech.co/edge-up-sports-2015-07" target="_blank" class="logo _techco"></a>
+		<a href="https://www.youtube.com/watch?v=W-ZczU1g0B8&feature=youtu.be&t=7m2s" target="_blank" class="logo _watson"></a>
+		<a href="http://www.startlandnews.com/2015/06/digital-sandbox-welcomes-six-new-startups/" target="_blank" class="logo _startland"></a>
+	</div>
+	<div class="clear"></div>
+</div>
+</section>
+
+<section class="info-section appHighlight">
+    <h2>Your New Fantasy Coach</h2>
+    <div class="blue-line"></div>
+    <p>The Edge Up mobile app supplements pre-existing fantasy league platforms, synthesizing insights for players, coaches, and analysis.
+    </p>
+    <img src="../images/teamInfoUI.png" class="sit">
+</section>
+
+<section class="info-section winLeague bg_grid">
+    <h2>Win Your League</h2>
+    <h3>Research Players</h3>
+    <p>That data is captured, sifted, and crunched into digestible and useful insights to help inform decisions.</p>
+    <h3>Track Roster Progress</h3>
+    <p>Edge Up shows you how your roster changes on multiple dimensions throughout the week, so you can make the decisions that matter.</p>
+    <h3>Save Time</h3>
+    <p>We help you by capturing and sorting all that news, then surfacing the interesting and prominent data with a little extra context on top.</p>
+    <h3>Stay Informed</h3>
+    <p>With our advanced alerts, we let you know when events happen that can make or break your season.</p>
+</section>
+
+<section class="info-section cogNewsDemo bg_network">
+    <h2>Try Our Cognitive News Demo By IBM Watson </h2>
+    <p>Edge Up shows you how your roster changes on multiple dimensions throughout the week, so you can make the decisions that matter.
+    </p>
+
+    <a href="http://demo.edgeupsports.com/experiments/cognews" target="_blank" class="button--primary watsonButton">
+        <img src="images/watsonIcon.png" class="globeIcon">
+        <span>Try News Demo</span>
+    </a>
+</section>
+
+<footer>
+    <a class="button--primary" ng-show="crowdfundingStatus">Learn More At Kickstarter</a>
+    <div class="shareButtons">
+        <div class="btn">
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <div class="btn">
+            <a href="#" class="fa fa-facebook"></a>
+        </div>
+    </div>
+    <p>contact@EdgeUpSports.com<br>
+    <span>&copy; Edge Up Sports. All Rights Reserved</span></p>
+</footer>

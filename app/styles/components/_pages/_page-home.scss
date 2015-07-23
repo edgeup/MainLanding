@@ -1,0 +1,491 @@
+/**
+*
+* Home Page Styles
+*
+**/
+
+
+
+
+
+// General
+
+$btn_width: 12.5rem;
+
+section {
+  box-shadow: 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.2) inset;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  * {
+	z-index: 2;
+  }
+}
+
+img.sit {
+  margin-bottom: -4rem;
+  padding-bottom: 1px;
+}
+
+.bg_network {
+  background: url("../images/network_bg.jpg") no-repeat $brand_color-dkblue;
+  background-size: cover;
+}
+.bg_grid {
+  background: url("../images/faceMatrix_bg.jpg") no-repeat $brand_color-dkblue;
+  background-size: cover;
+}
+
+// This needs to go wherever site level tweaks are going.
+
+.template-content {
+  padding-top: 1rem;
+}
+
+.button--primary, .button--primary:visited {
+  @extend .noselect;
+  width: 100%;
+  cursor: pointer;
+  border-radius: .25rem;
+  background-color: rgba($brand_color-dkblue, 0.5);
+  border: .15rem rgba(white, .5) solid;
+  font-size: 1.5rem;
+  padding: 12px;
+  transition: background-color 0.5s ease;
+  &:active {
+	transition: background 0.2s;
+	background-color: rgba($brand_color-dkblue, 0.75);
+  }
+}
+
+.button--primary:hover {
+  border: .15rem rgba(white, .5) solid;
+  border-radius: .25rem;
+  background-color: rgba($brand_color-dkblue, .9);
+}
+
+// Hero Styles
+
+.home-hero {
+  background-color: $brand_color-dkblue;
+  background-image: url('../images/heroBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10rem;
+  .hero_logo {
+	max-width: 150px;
+  }
+  img {
+    padding-top: 2rem;
+  }
+  h1 {
+    text-align: center;
+	background-color: rgba($brand-color-dkblue, 0.75);
+	padding: 1rem 0 1.5rem;
+	margin: 2rem -1.5rem 0;
+	border: 1px solid rgba(255,255,255, 0.1);
+	border-left: 0;
+	border-right: 0;
+	color: $brand_color-ltblue;
+	font-size: 2.75rem;
+	font-weight: bold;
+	.wordbreak {
+	  display: block;
+	}
+  }
+  h2 {
+    text-align: center;
+	opacity: 0.75;
+	font-size: 1.75rem;
+  }
+}
+.wrapper_signup {
+  margin: 2rem auto 0;
+  max-width: 650px;
+  background: rgba($brand_color-black, 0.35);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  p {
+	padding: 0 0 1rem;
+  }
+}
+.emailStatus {
+  display: block;
+  color: white;
+  background-color: rgba($brand_color-highlight0, 0.5);
+  border-radius: .25rem;
+  margin-bottom: 0.25rem;
+}
+.emailForm {
+  width: 100%;
+  display: table;
+  position: relative;
+  .emailInput, .emailButton {
+	font-size: 1.5rem;
+	line-height: 150%;
+  }
+  .emailInput {
+    width: 100%;
+    background-color: white;
+    border-radius: .25rem;
+    color: $brand_color-ltblue;
+    margin-top: 0;
+    position: relative;
+    display: table-cell;
+    padding-right: 15rem;
+	text-align: left;
+  }
+  .emailButton {
+    margin-top: 0;
+    border-radius: 0 .25rem .25rem 0;
+    border-left: none;
+    background-color: $brand_color-ltblue;
+    width: 11rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+	&:hover {
+	  background-color: darken($brand_color-ltblue, 20%);
+	}
+	&:active {
+	  transition: all 0.1s;
+	  background-color: darken($brand_color-ltblue, 40%);
+	}
+  }
+}
+
+.blue-line {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 2px;
+  width: 75px;
+  margin: 1.5rem 0 1rem;
+  background-color: $brand_color-ltblue;
+}
+
+// Info Section
+
+.info-section {
+  background-color: #1b3644;
+  h2 {
+    color: white;
+	margin-bottom: 3rem;
+  }
+  p {
+    color: $brand_color-ltblue;
+    padding: 0 0 3rem;
+	margin: 0 auto;
+	max-width: 400px;
+  }
+}
+
+// First Info Section
+
+.firstInfo {
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+// Video Section
+
+.video-section {
+  background-color: $brand_color-grey;
+  h2 {
+    color: white;
+  }
+  .pitchVid {
+    border-top: 1px solid rgba($brand_color-blueGrey1, 0.1);
+    background: url("../../images/basic_cover.jpg") no-repeat rgb(12, 19, 26);
+    background-size: cover;
+    padding: 6rem 0;
+    overflow: hidden;
+    h3 {
+      color: rgba($brand_color-blueGrey1, 0.75);
+    }
+  }
+}
+.shareCampaign {
+  p {
+    color: $brand_color-blueGrey0;
+  }
+  .shareButtons {
+    width: 100%;
+    max-width: $btn_width;
+    margin: 0 auto;
+    .btn {
+      display: inline-block;
+      min-width: 4rem;
+      text-decoration: none;
+      border: none;
+      margin: 1rem 0.25rem 0;
+      color: $brand_color-blueGrey1;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    .twitter {
+      background-color: #4099FF;
+    }
+    .facebook {
+      background-color: #3B5998;
+    }
+  }
+
+}
+
+.appearances {
+  p {
+	color: $brand_color-blueGrey0;
+  }
+  .logosHolder {
+    display: flex;
+    flex-flow: row wrap;
+	max-width: 500px;
+	margin: 0 auto;
+    .logo {
+	  $blocksize: 9rem;
+	  height: $blocksize;
+	  flex: 1;
+	  margin: 0 1rem;
+	  transition: opacity 0.25s;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: contain;
+	  &._cnn {
+		background-image: url('../images/cnnLogo.png');
+	  }
+	  &._techco {
+		background-image: url('../images/techco.png');
+	  }
+	  &._startland {
+		background-image: url('../images/startland.png');
+	  }
+	  &._watson {
+		background-image: url('../images/watsonLogo.png');
+	  }
+	  &._espn {
+		background-image: url('../images/espnLogo.png');
+	  }
+	  &:hover {
+		opacity: 0.5;
+	  }
+	}
+  }
+}
+
+
+
+
+
+// App Highlight
+
+.appHighlight {
+  background: url('../images/mobileHighlight.jpg') no-repeat center center;
+  background-size: cover;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+// App Benefits
+
+.winLeague {
+  background-size: cover;
+  h3 {
+    color: white;
+  }
+}
+
+
+
+
+
+// Cognitive News Demo
+
+.cogNewsDemo {
+  .globeIcon {
+    position: relative;
+    left: -38px;
+    bottom: 45px;
+  }
+  .watsonButton, .watsonButton:visited {
+    height: 50px;
+    left: -50px;
+    text-align: center;
+    background: linear-gradient(to right, #0D2734 , #163B48);
+	transition: all 0.5s;
+	color: $brand_color-blueGrey1;
+    span {
+      left: -30px;
+      top: -30px;
+      position: relative;
+    }
+	&:hover {
+	  transition: all 0.5s;
+	  background: darken($brand_color-dkblue, 10%);
+	}
+	&:active {
+	  transition: background 0.1s;
+	  background: darken($brand_color-dkblue, 20%);
+	}
+  }
+}
+
+
+
+
+
+// Footer
+
+footer {
+  $footer_bg: rgba($brand_color-ltblue, 0.25);
+  text-align: center;
+  background-color: $footer_bg;
+  padding: 4rem 1.5rem;
+  .shareButtons {
+    margin: 1rem auto 0;
+    display: flex;
+    max-width: $btn_width;
+    .btn {
+      flex: auto;
+    }
+    a, a:active, a:visited {
+      text-decoration: none;
+      color: rgba($brand_color-dkblue, 0.9);
+      background-color: rgba($brand_color-blueGrey0, 0.9);
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 50%;
+      max-width: 4rem;
+      margin: 0 0.5rem;
+      transition: background 0.5s;
+    }
+    a:hover {
+      background-color: rgba($brand_color-blueGrey0, 0.5);
+    }
+  }
+  .twitter {
+    margin-right: 20px;
+  }
+  a {
+    width: 100%;
+  }
+  p {
+    color: white;
+  }
+  span {
+    font-size: 10px;
+    color: white;
+  }
+}
+
+
+
+
+// Helpers
+
+.embed-responsive, iframe {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 0 0 2rem rgba($brand_color-black, 0.5);
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wordbreak {
+  white-space: pre;
+}
+
+
+
+
+
+/** Larger Screens - desktops and tablets **/
+@media all and (min-width: 990px) {
+
+  // Button Tweak
+  .button--primary {
+    max-width: 275px;
+  }
+
+  .emailInput {
+    max-width: 100%;
+  }
+  .emailButton {
+    max-width: 100%;
+  }
+
+  // Email Signup
+
+
+  // Padding Tweak
+  section:not(.home-hero) {
+	padding-left: 4rem;
+	padding-right: 4rem;
+  }
+
+  // Hero
+  .home-hero {
+	.hero_logo {
+	  max-width: 200px;
+	}
+	h1 {
+		font-size: 4rem;
+  	}
+  }
+
+  // Image Tweak
+  .info-section, .appHighlight {
+	img {
+	  max-width: 600px;
+	}
+  }
+
+  // Appearances
+  .appearances {
+	margin-top: 4rem;
+	.logosHolder {
+	  display: flex;
+	  flex-flow: row wrap;
+	  height: auto;
+	  img {
+		width: auto;
+		max-height: 100px;
+	  }
+	}
+  }
+}
