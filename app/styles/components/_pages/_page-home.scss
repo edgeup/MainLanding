@@ -23,6 +23,16 @@ section {
 
 img.sit {
   margin-bottom: -4rem;
+  padding-bottom: 1px;
+}
+
+.bg_network {
+  background: url("../images/network_bg.jpg") no-repeat $brand_color-dkblue;
+  background-size: cover;
+}
+.bg_grid {
+  background: url("../images/faceMatrix_bg.jpg") no-repeat $brand_color-dkblue;
+  background-size: cover;
 }
 
 // This needs to go wherever site level tweaks are going.
@@ -184,10 +194,6 @@ img.sit {
 
 .video-section {
   background-color: $brand_color-grey;
-  background-image: url("../images/lineBG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   h2 {
     color: white;
   }
@@ -277,9 +283,8 @@ img.sit {
 // App Highlight
 
 .appHighlight {
-  background-image: url('../images/mobileHighlight.png');
+  background: url('../images/mobileHighlight.jpg') no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
   h2 {
     margin-bottom: 0;
   }
@@ -292,9 +297,7 @@ img.sit {
 // App Benefits
 
 .winLeague {
-  background-image: url('../images/leagueBG.png');
   background-size: cover;
-  background-repeat: no-repeat;
   h3 {
     color: white;
   }
@@ -312,12 +315,13 @@ img.sit {
     left: -38px;
     bottom: 45px;
   }
-  .watsonButton, .watsonButton:active {
+  .watsonButton, .watsonButton:visited {
     height: 50px;
     left: -50px;
     text-align: center;
     background: linear-gradient(to right, #0D2734 , #163B48);
 	transition: all 0.5s;
+	color: $brand_color-blueGrey1;
     span {
       left: -30px;
       top: -30px;
@@ -326,6 +330,10 @@ img.sit {
 	&:hover {
 	  transition: all 0.5s;
 	  background: darken($brand_color-dkblue, 10%);
+	}
+	&:active {
+	  transition: background 0.1s;
+	  background: darken($brand_color-dkblue, 20%);
 	}
   }
 }

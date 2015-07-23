@@ -2912,7 +2912,16 @@ section {
     z-index: 2; }
 
 img.sit {
-  margin-bottom: -4rem; }
+  margin-bottom: -4rem;
+  padding-bottom: 1px; }
+
+.bg_network {
+  background: url("../images/network_bg.jpg") no-repeat #1b3644;
+  background-size: cover; }
+
+.bg_grid {
+  background: url("../images/faceMatrix_bg.jpg") no-repeat #1b3644;
+  background-size: cover; }
 
 .template-content {
   padding-top: 1rem; }
@@ -3033,11 +3042,7 @@ img.sit {
   margin-bottom: 0; }
 
 .video-section {
-  background-color: #424242;
-  background-image: url("../images/lineBG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: #424242; }
   .video-section h2 {
     color: white; }
   .video-section .pitchVid {
@@ -3098,16 +3103,13 @@ img.sit {
       opacity: 0.5; }
 
 .appHighlight {
-  background-image: url("../images/mobileHighlight.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background: url("../images/mobileHighlight.jpg") no-repeat center center;
+  background-size: cover; }
   .appHighlight h2 {
     margin-bottom: 0; }
 
 .winLeague {
-  background-image: url("../images/leagueBG.png");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: cover; }
   .winLeague h3 {
     color: white; }
 
@@ -3115,19 +3117,23 @@ img.sit {
   position: relative;
   left: -38px;
   bottom: 45px; }
-.cogNewsDemo .watsonButton, .cogNewsDemo .watsonButton:active {
+.cogNewsDemo .watsonButton, .cogNewsDemo .watsonButton:visited {
   height: 50px;
   left: -50px;
   text-align: center;
   background: linear-gradient(to right, #0D2734, #163B48);
-  transition: all 0.5s; }
-  .cogNewsDemo .watsonButton span, .cogNewsDemo .watsonButton:active span {
+  transition: all 0.5s;
+  color: #ECEFF1; }
+  .cogNewsDemo .watsonButton span, .cogNewsDemo .watsonButton:visited span {
     left: -30px;
     top: -30px;
     position: relative; }
-  .cogNewsDemo .watsonButton:hover, .cogNewsDemo .watsonButton:active:hover {
+  .cogNewsDemo .watsonButton:hover, .cogNewsDemo .watsonButton:visited:hover {
     transition: all 0.5s;
     background: #0d191f; }
+  .cogNewsDemo .watsonButton:active, .cogNewsDemo .watsonButton:visited:active {
+    transition: background 0.1s;
+    background: black; }
 
 footer {
   text-align: center;
