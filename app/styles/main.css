@@ -2917,14 +2917,18 @@ img.sit {
 .template-content {
   padding-top: 1rem; }
 
-.button--primary, .button--primary:active, .button--primary:visited {
+.button--primary, .button--primary:visited {
   width: 100%;
+  cursor: pointer;
   border-radius: .25rem;
   background-color: rgba(27, 54, 68, 0.5);
   border: 0.15rem rgba(255, 255, 255, 0.5) solid;
   font-size: 1.5rem;
   padding: 12px;
   transition: background-color 0.5s ease; }
+  .button--primary:active, .button--primary:visited:active {
+    transition: background 0.2s;
+    background-color: rgba(27, 54, 68, 0.75); }
 
 .button--primary:hover {
   border: 0.15rem rgba(255, 255, 255, 0.5) solid;
@@ -2963,6 +2967,47 @@ img.sit {
     text-align: center;
     opacity: 0.75;
     font-size: 1.75rem; }
+
+.emailStatus {
+  display: block;
+  color: white;
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: .25rem;
+  margin-bottom: 0.25rem; }
+
+.emailForm {
+  width: 100%;
+  margin: 2rem auto 0;
+  display: table;
+  position: relative;
+  max-width: 600px; }
+  .emailForm .emailInput, .emailForm .emailButton {
+    font-size: 1.5rem;
+    line-height: 150%; }
+  .emailForm .emailInput {
+    width: 100%;
+    background-color: white;
+    border-radius: .25rem;
+    color: #41a7e1;
+    margin-top: 0;
+    position: relative;
+    display: table-cell;
+    padding-right: 15rem;
+    text-align: left; }
+  .emailForm .emailButton {
+    margin-top: 0;
+    border-radius: 0 .25rem .25rem 0;
+    border-left: none;
+    background-color: #41a7e1;
+    width: 11rem;
+    display: inline-block;
+    position: absolute;
+    right: 0; }
+    .emailForm .emailButton:hover {
+      background-color: #1a71a2; }
+    .emailForm .emailButton:active {
+      transition: all 0.1s;
+      background-color: #0c344a; }
 
 .blue-line {
   position: relative;
@@ -3151,6 +3196,12 @@ footer {
   .button--primary {
     max-width: 275px; }
 
+  .emailInput {
+    max-width: 100%; }
+
+  .emailButton {
+    max-width: 100%; }
+
   section:not(.home-hero) {
     padding-left: 4rem;
     padding-right: 4rem; }
@@ -3294,6 +3345,14 @@ footer {
 /*==========  GENERIC  ==========*/
 .centered {
   text-align: center; }
+
+.noselect, .button--primary, .button--primary:visited {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 /*==========  TAG  ==========*/
 .tag {

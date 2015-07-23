@@ -89,22 +89,19 @@ app.directive('youtube', function($window) {
 
 
 // Controllers
-    app.controller('HomeCtrl', function HomeCtrl($scope) {
-        $scope.crowdfundingStatus = true;
-    });
+app.controller('HomeCtrl', function HomeCtrl($scope) {
+    $scope.crowdfundingStatus = true;
+});
 
-    app.controller('CompanyCtrl', function CompanyCtrl($scope, greeting) {
-        $scope.greeting = greeting;
-    });
+app.controller('CompanyCtrl', function CompanyCtrl($scope, greeting) {
+    $scope.greeting = greeting;
+});
 
-    app.controller('PresskitCtrl', function PresskitCtrl($scope, greeting) {
-        $scope.greeting = greeting;
-    });
-
+app.controller('PresskitCtrl', function PresskitCtrl($scope, greeting) {
+    $scope.greeting = greeting;
+});
 
 
 
 
 }());
-
-// Email validation

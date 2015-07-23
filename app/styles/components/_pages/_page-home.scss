@@ -31,14 +31,20 @@ img.sit {
   padding-top: 1rem;
 }
 
-.button--primary, .button--primary:active, .button--primary:visited {
+.button--primary, .button--primary:visited {
+  @extend .noselect;
   width: 100%;
+  cursor: pointer;
   border-radius: .25rem;
-  background-color: rgba($brand_color-dkblue, .5);
+  background-color: rgba($brand_color-dkblue, 0.5);
   border: .15rem rgba(white, .5) solid;
   font-size: 1.5rem;
   padding: 12px;
   transition: background-color 0.5s ease;
+  &:active {
+	transition: background 0.2s;
+	background-color: rgba($brand_color-dkblue, 0.75);
+  }
 }
 
 .button--primary:hover {
@@ -93,38 +99,46 @@ img.sit {
   color: white;
   background-color: rgba($brand_color-highlight0, .5);
   border-radius: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .emailForm {
   width: 100%;
-  padding-top: .5rem;
+  margin: 2rem auto 0;
   display: table;
   position: relative;
+  max-width: 600px;
+  .emailInput, .emailButton {
+	font-size: 1.5rem;
+	line-height: 150%;
+  }
   .emailInput {
     width: 100%;
     background-color: white;
     border-radius: .25rem;
     color: $brand_color-ltblue;
-    height: 3.75rem;
     margin-top: 0;
     position: relative;
     display: table-cell;
     padding-right: 15rem;
-    &.ng-invalid-email {
-    }
+	text-align: left;
   }
-  .emailButton, .emailButton:hover {
+  .emailButton {
     margin-top: 0;
     border-radius: 0 .25rem .25rem 0;
-    width: 20%;
-    height: 3.75rem;
-    position: relative;
     border-left: none;
     background-color: $brand_color-ltblue;
-    width: 15rem;
+    width: 11rem;
     display: inline-block;
     position: absolute;
     right: 0;
+	&:hover {
+	  background-color: darken($brand_color-ltblue, 20%);
+	}
+	&:active {
+	  transition: all 0.1s;
+	  background-color: darken($brand_color-ltblue, 40%);
+	}
   }
 }
 
