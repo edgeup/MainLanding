@@ -30,6 +30,23 @@
 
 
 
+// Controllers
+    app.controller('HomeCtrl', function HomeCtrl($scope) {
+        // Set if we're crowdfunding or not
+        $scope.crowdfundingStatus = true;
+    });
+
+    app.controller('CompanyCtrl', function CompanyCtrl($scope, greeting) {
+        $scope.greeting = greeting;
+    });
+
+    app.controller('PresskitCtrl', function PresskitCtrl($scope, greeting) {
+        $scope.greeting = greeting;
+    });
+
+
+
+
 // Greeting Service
     app.service('greeting', function Greeting() {
         var greeting = this;
@@ -85,22 +102,6 @@ app.directive('youtube', function($window) {
     };
 });
 
-
-
-
-// Controllers
-app.controller('HomeCtrl', function HomeCtrl($scope) {
-    // Set if we're crowdfunding or not
-    $scope.crowdfundingStatus = true;
-});
-
-app.controller('CompanyCtrl', function CompanyCtrl($scope, greeting) {
-    $scope.greeting = greeting;
-});
-
-app.controller('PresskitCtrl', function PresskitCtrl($scope, greeting) {
-    $scope.greeting = greeting;
-});
 
 
 
