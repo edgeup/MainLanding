@@ -2977,6 +2977,15 @@ img.sit {
     opacity: 0.75;
     font-size: 1.75rem; }
 
+.wrapper_signup {
+  margin: 2rem auto 0;
+  max-width: 650px;
+  background: rgba(17, 17, 17, 0.35);
+  padding: 1rem;
+  border-radius: 0.25rem; }
+  .wrapper_signup p {
+    padding: 0 0 1rem; }
+
 .emailStatus {
   display: block;
   color: white;
@@ -2986,10 +2995,8 @@ img.sit {
 
 .emailForm {
   width: 100%;
-  margin: 2rem auto 0;
   display: table;
-  position: relative;
-  max-width: 600px; }
+  position: relative; }
   .emailForm .emailInput, .emailForm .emailButton {
     font-size: 1.5rem;
     line-height: 150%; }

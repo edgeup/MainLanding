@@ -90,6 +90,7 @@ app.directive('youtube', function($window) {
 
 // Controllers
 app.controller('HomeCtrl', function HomeCtrl($scope) {
+    // Set if we're crowdfunding or not
     $scope.crowdfundingStatus = true;
 });
 
