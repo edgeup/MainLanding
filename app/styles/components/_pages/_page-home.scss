@@ -19,6 +19,9 @@ section {
   * {
 	z-index: 2;
   }
+  h1 {
+    color: $brand_color-blueGrey0;
+  }
 }
 
 img.sit {
@@ -163,7 +166,7 @@ img.sit {
 
 .info-section {
   background-color: #1b3644;
-  h2 {
+  h1 {
     color: white;
 	margin-bottom: 3rem;
   }
@@ -178,7 +181,7 @@ img.sit {
 // First Info Section
 
 .firstInfo {
-  h2 {
+  h1 {
     margin-bottom: 0;
   }
 }
@@ -282,7 +285,7 @@ img.sit {
 .appHighlight {
   background: url('../images/mobileHighlight.jpg') no-repeat center center;
   background-size: cover;
-  h2 {
+  h1 {
     margin-bottom: 0;
   }
 }
@@ -295,7 +298,7 @@ img.sit {
 
 .winLeague {
   background-size: cover;
-  h3 {
+  h2 {
     color: white;
   }
 }

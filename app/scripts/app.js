@@ -33,7 +33,7 @@
 // Controllers
     app.controller('HomeCtrl', function HomeCtrl($scope) {
         // Set if we're crowdfunding or not
-        $scope.crowdfundingStatus = true;
+        $scope.crowdfundingStatus = false;
     });
 
     app.controller('CompanyCtrl', function CompanyCtrl($scope, greeting) {

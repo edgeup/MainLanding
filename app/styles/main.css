@@ -2910,6 +2910,8 @@ section {
   padding: 4rem 1.5rem; }
   section * {
     z-index: 2; }
+  section h1 {
+    color: #CFD8DC; }
 
 img.sit {
   margin-bottom: -4rem;
@@ -3028,7 +3030,7 @@ img.sit {
 
 .info-section {
   background-color: #1b3644; }
-  .info-section h2 {
+  .info-section h1 {
     color: white;
     margin-bottom: 3rem; }
   .info-section p {
@@ -3037,7 +3039,7 @@ img.sit {
     margin: 0 auto;
     max-width: 400px; }
 
-.firstInfo h2 {
+.firstInfo h1 {
   margin-bottom: 0; }
 
 .video-section {
@@ -3104,12 +3106,12 @@ img.sit {
 .appHighlight {
   background: url("../images/mobileHighlight.jpg") no-repeat center center;
   background-size: cover; }
-  .appHighlight h2 {
+  .appHighlight h1 {
     margin-bottom: 0; }
 
 .winLeague {
   background-size: cover; }
-  .winLeague h3 {
+  .winLeague h2 {
     color: white; }
 
 .cogNewsDemo .globeIcon {
@@ -3498,7 +3500,8 @@ ol {
 
 .navdrawer-container.open {
   -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
+  transform: translate(0, 0);
+  z-index: 3; }
 
 .app-bar,
 .navdrawer-container.opened,
