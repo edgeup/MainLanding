@@ -2988,31 +2988,21 @@ img.sit {
   margin-bottom: 0.25rem; }
 
 .emailForm {
-  width: 100%;
-  display: table;
-  position: relative; }
+  width: 100%; }
   .emailForm .emailInput, .emailForm .emailButton {
     font-size: 1.5rem;
-    line-height: 150%; }
-  .emailForm .emailInput {
+    line-height: 150%;
     width: 100%;
+    max-width: 100%; }
+  .emailForm .emailInput {
     background-color: white;
-    border-radius: .25rem;
     color: #41a7e1;
     margin-top: 0;
-    position: relative;
-    display: table-cell;
-    padding-right: 15rem;
     text-align: left; }
   .emailForm .emailButton {
     margin-top: 0;
-    border-radius: 0 .25rem .25rem 0;
-    border-left: none;
     background-color: #41a7e1;
-    width: 11rem;
-    display: inline-block;
-    position: absolute;
-    right: 0; }
+    display: block; }
     .emailForm .emailButton:hover {
       background-color: #1a71a2; }
     .emailForm .emailButton:active {
@@ -3213,11 +3203,25 @@ footer {
   .button--primary {
     max-width: 275px; }
 
-  .emailInput {
-    max-width: 100%; }
-
-  .emailButton {
-    max-width: 100%; }
+  .emailForm {
+    display: table;
+    position: relative; }
+    .emailForm .emailInput {
+      width: 100%;
+      border-radius: .25rem;
+      color: #41a7e1;
+      margin-top: 0;
+      position: relative;
+      display: table-cell;
+      padding-right: 15rem; }
+    .emailForm .emailButton {
+      border-radius: 0 .25rem .25rem 0;
+      border-left: none;
+      background-color: #41a7e1;
+      width: 11rem;
+      display: inline-block;
+      position: absolute;
+      right: 0; }
 
   section:not(.home-hero) {
     padding-left: 4rem;
