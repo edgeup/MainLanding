@@ -232,18 +232,19 @@ img.sit {
   }
   .logosHolder {
     display: flex;
+	display: -webkit-flex;
     flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
 	max-width: 500px;
 	margin: 0 auto;
     .logo {
 	  $blocksize: 9rem;
 	  height: $blocksize;
+	  -webkit-flex: 1;
 	  flex: 1;
 	  margin: 0 1rem;
 	  transition: opacity 0.25s;
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  background-size: contain;
+      background: transparent no-repeat center center / contain;
 	  &._cnn {
 		background-image: url('../images/cnnLogo.png');
 	  }

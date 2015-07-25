@@ -3027,7 +3027,7 @@ img.sit {
     color: #41a7e1;
     padding: 0 0 3rem;
     margin: 0 auto;
-    max-width: 25rem; }
+    max-width: 26rem; }
 
 .firstInfo h1 {
   margin-bottom: 0; }
@@ -3069,7 +3069,9 @@ img.sit {
   color: #CFD8DC; }
 .appearances .logosHolder {
   display: flex;
+  display: -webkit-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   max-width: 500px;
   margin: 0 auto; }
   .appearances .logosHolder .logo {
@@ -3077,9 +3079,7 @@ img.sit {
     flex: 1;
     margin: 0 1rem;
     transition: opacity 0.25s;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
+    background: transparent no-repeat center center / contain; }
     .appearances .logosHolder .logo._cnn {
       background-image: url("../images/cnnLogo.png"); }
     .appearances .logosHolder .logo._techco {
