@@ -2915,15 +2915,6 @@ img.sit {
   margin-bottom: -4rem;
   padding-bottom: 1px; }
 
-.bg_network {
-  background: top 50% no-repeat #1b3644;
-  background-image: url("../images/cluster.png");
-  background-size: 100%; }
-
-.bg_grid {
-  background: url("../images/faceMatrix_bg.png") no-repeat #1b3644;
-  background-size: cover; }
-
 .template-content {
   padding-top: 1rem; }
 
@@ -3204,6 +3195,16 @@ footer {
 
 .wordbreak {
   white-space: pre; }
+
+.bg_network {
+  background: top 50% no-repeat #295369;
+  background-image: url("../images/cluster.png");
+  background-size: 100%; }
+
+.bg_grid {
+  background: url("../images/faceMatrix_bg.png") no-repeat;
+  background-color: #18303d;
+  background-size: cover; }
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
