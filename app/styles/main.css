@@ -3027,7 +3027,7 @@ img.sit {
     color: #41a7e1;
     padding: 0 0 3rem;
     margin: 0 auto;
-    max-width: 400px; }
+    max-width: 25rem; }
 
 .firstInfo h1 {
   margin-bottom: 0; }
@@ -3400,7 +3400,8 @@ body {
   margin: 0;
   padding: 0;
   background: url("../images/site_bg.jpg") fixed #1b3644 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-size: 16px; }
 
 body {
   position: relative;
@@ -3485,7 +3486,7 @@ body.open {
 p,
 ul,
 ol {
-  font-size: 19px; }
+  font-size: 1.5rem; }
 
 .navdrawer-container {
   z-index: 1;
