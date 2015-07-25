@@ -231,17 +231,14 @@ img.sit {
 	color: $brand_color-blueGrey0;
   }
   .logosHolder {
-    display: flex;
-	display: -webkit-flex;
-    flex-flow: row wrap;
-	-webkit-flex-flow: row wrap;
+    @include flexbox;
+	@include flex-flow(row wrap);
 	max-width: 500px;
 	margin: 0 auto;
     .logo {
 	  $blocksize: 9rem;
 	  height: $blocksize;
-	  -webkit-flex: 1;
-	  flex: 1;
+	  @include flex(1);
 	  margin: 0 1rem;
 	  transition: opacity 0.25s;
       background: transparent no-repeat center center / contain;
@@ -342,10 +339,10 @@ footer {
   padding: 4rem 1.5rem;
   .shareButtons {
     margin: 1rem auto 0;
-    display: flex;
+	@include flexbox;
     max-width: $btn_width;
     .btn {
-      flex: auto;
+	  @include flex(auto);
     }
     a, a:active, a:visited {
       text-decoration: none;
@@ -492,8 +489,8 @@ footer {
   .appearances {
 	margin-top: 4rem;
 	.logosHolder {
-	  display: flex;
-	  flex-flow: row wrap;
+	  @include flexbox;
+	  @include flex-flow(row wrap);
 	  height: auto;
 	  img {
 		width: auto;

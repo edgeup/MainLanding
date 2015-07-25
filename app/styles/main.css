@@ -3068,14 +3068,24 @@ img.sit {
 .appearances p {
   color: #CFD8DC; }
 .appearances .logosHolder {
-  display: flex;
+  display: -webkit-box;
   display: -webkit-flex;
-  flex-flow: row wrap;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   max-width: 500px;
   margin: 0 auto; }
   .appearances .logosHolder .logo {
     height: 9rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     margin: 0 1rem;
     transition: opacity 0.25s;
@@ -3132,9 +3142,18 @@ footer {
   padding: 4rem 1.5rem; }
   footer .shareButtons {
     margin: 1rem auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
     max-width: 12.5rem; }
     footer .shareButtons .btn {
+      -webkit-box-flex: auto;
+      -webkit-flex: auto;
+      -moz-box-flex: auto;
+      -moz-flex: auto;
+      -ms-flex: auto;
       flex: auto; }
     footer .shareButtons a, footer .shareButtons a:active, footer .shareButtons a:visited {
       text-decoration: none;
@@ -3238,7 +3257,14 @@ footer {
   .appearances {
     margin-top: 4rem; }
     .appearances .logosHolder {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-flex-flow: row wrap;
+      -moz-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
       flex-flow: row wrap;
       height: auto; }
       .appearances .logosHolder img {
@@ -3426,13 +3452,18 @@ body.open {
     height: 100%; }
 
 .app-bar-container {
+  display: -webkit-box;
   display: -webkit-flex;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 60px;
   position: relative;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin: 0 auto; }
@@ -3443,7 +3474,10 @@ body.open {
   transform: translate(250px, 0); }
 
 .app-bar .logo {
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
   font-size: 2em;
@@ -3462,10 +3496,15 @@ body.open {
   font-weight: normal; }
 
 .app-bar-actions {
+  display: -webkit-box;
   display: -webkit-flex;
+  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   z-index: 2; }
@@ -3611,17 +3650,27 @@ main {
     display: none; }
 
   .navdrawer-container ul {
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
     max-width: 864px;
     margin: 0 auto;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
     -webkit-flex-direction: row;
+    -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row; }
 
   .navdrawer-container ul li {
     border: none;
+    -webkit-box-flex: auto;
+    -webkit-flex: auto;
+    -moz-box-flex: auto;
+    -moz-flex: auto;
+    -ms-flex: auto;
     flex: auto; }
 
   main {
