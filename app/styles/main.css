@@ -2916,11 +2916,12 @@ img.sit {
   padding-bottom: 1px; }
 
 .bg_network {
-  background: url("../images/network_bg.jpg") no-repeat #1b3644;
-  background-size: cover; }
+  background: top 50% no-repeat #1b3644;
+  background-image: url("../images/cluster.png");
+  background-size: 100%; }
 
 .bg_grid {
-  background: url("../images/faceMatrix_bg.jpg") no-repeat #1b3644;
+  background: url("../images/faceMatrix_bg.png") no-repeat #1b3644;
   background-size: cover; }
 
 .template-content {
@@ -3391,9 +3392,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #1b3644;
-  background: -webkit-linear-gradient(top, #1b3644 0%, #111 100%);
-  background-attachment: fixed; }
+  background: url("../images/site_bg.jpg") fixed #1b3644 no-repeat;
+  background-size: cover; }
 
 body {
   position: relative;

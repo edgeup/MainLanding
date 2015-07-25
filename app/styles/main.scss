@@ -23,9 +23,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: $brand_color-dkblue;
-  background: -webkit-linear-gradient(top, $brand_color-dkblue 0%, $brand_color-black 100%);
-  background-attachment: fixed;
+  background: url("../images/site_bg.jpg") fixed $brand_color-dkblue no-repeat;
+  //background: -webkit-linear-gradient(top, $brand_color-dkblue 0%, $brand_color-black 100%);
+  background-size: cover;
 }
 
 body {

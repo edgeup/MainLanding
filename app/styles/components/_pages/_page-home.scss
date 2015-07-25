@@ -27,11 +27,12 @@ img.sit {
 }
 
 .bg_network {
-  background: url("../images/network_bg.jpg") no-repeat $brand_color-dkblue;
-  background-size: cover;
+  background: top 50% no-repeat $brand_color-dkblue;
+  background-image: url("../images/cluster.png");
+  background-size: 100%;
 }
 .bg_grid {
-  background: url("../images/faceMatrix_bg.jpg") no-repeat $brand_color-dkblue;
+  background: url("../images/faceMatrix_bg.png") no-repeat $brand_color-dkblue;
   background-size: cover;
 }
 
