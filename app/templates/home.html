@@ -19,7 +19,7 @@
 		<form name="emailForm" class="emailForm" id="emailForm" ng-submit="submit()">
 			<span ng-show="emailForm.email.$dirty && emailForm.email.$invalid" class="emailStatus">Your email isn't formatted quite right yet</span>
 			<input class="button--primary emailInput" type="email" name="email" ng-model="email" placeholder="Email Address" />
-			<a class="emailButton button--primary">Submit Email</a>
+			<a class="emailButton button--primary" type="submit">Submit Email</a>
 		</form>
 	</div>
 </section>
