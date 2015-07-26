@@ -442,25 +442,35 @@ footer {
   .emailForm {
 	display: table;
 	position: relative;
-	.emailInput {
-	  width: 100%;
-	  border-radius: .25rem;
-	  color: $brand_color-ltblue;
-	  margin-top: 0;
-	  position: relative;
-	  display: table-cell;
-	  padding-right: 15rem;
-	}
-	.emailButton {
-	  border-radius: 0 .25rem .25rem 0;
-	  border-left: none;
-	  background-color: $brand_color-ltblue;
-	  width: 11rem;
-	  display: inline-block;
-	  position: absolute;
-	  right: 0;
-	}
+  	.emailInput {
+  	  width: 100%;
+  	  border-radius: .25rem;
+  	  color: $brand_color-ltblue;
+  	  margin-top: 0;
+  	  position: relative;
+  	  display: table-cell;
+  	  padding-right: 15rem;
+  	}
+  	.emailButton {
+  	  border-radius: 0 .25rem .25rem 0;
+  	  border-left: none;
+  	  background-color: $brand_color-ltblue;
+  	  width: 11rem;
+  	  display: inline-block;
+  	  position: absolute;
+  	  right: 0;
+  	}
   }
+  
+  .emailButton {
+      border-radius: 0 .25rem .25rem 0;
+      border-left: none;
+      background-color: $brand_color-ltblue;
+      width: 11rem;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+    }
 
   // Padding Tweak
   section:not(.home-hero) {
