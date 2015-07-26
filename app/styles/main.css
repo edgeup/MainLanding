@@ -3249,6 +3249,15 @@ footer {
       position: absolute;
       right: 0; }
 
+  .emailButton {
+    border-radius: 0 .25rem .25rem 0;
+    border-left: none;
+    background-color: #41a7e1;
+    width: 11rem;
+    display: inline-block;
+    position: absolute;
+    right: 0; }
+
   section:not(.home-hero) {
     padding-left: 4rem;
     padding-right: 4rem; }
