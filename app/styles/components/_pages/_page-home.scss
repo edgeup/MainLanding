@@ -105,6 +105,9 @@ img.sit {
   border-radius: 0.25rem;
   p {
 	padding: 0 0 1rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
   }
 }
 .emailStatus {
@@ -117,16 +120,16 @@ img.sit {
 .emailForm {
   width: 100%;
   .emailInput, .emailButton {
-	font-size: 1.5rem;
-	line-height: 150%;
-	width: 100%;
-	max-width: 100%;
+  	font-size: 1.5rem;
+  	line-height: 150%;
+  	width: 100%;
+  	max-width: 100%;
   }
   .emailInput {
     background-color: white;
     color: $brand_color-ltblue;
     margin-top: 0;
-	text-align: left;
+    text-align: left;
   }
   .emailButton {
     margin-top: 0;
@@ -461,15 +464,16 @@ footer {
   	  right: 0;
   	}
   }
-  
+
   .emailButton {
       border-radius: 0 .25rem .25rem 0;
       border-left: none;
       background-color: $brand_color-ltblue;
       width: 11rem;
-      display: inline-block;
+      display: inline-block !important;
       position: absolute;
       right: 0;
+      top: 0;
     }
 
   // Padding Tweak
