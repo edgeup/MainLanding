@@ -2907,14 +2907,14 @@ object {
 section {
   box-shadow: 0 -0.1rem 0.25rem rgba(0, 0, 0, 0.2) inset;
   text-align: center;
-  padding: 4rem 1.5rem; }
+  padding: 2rem 1.5rem; }
   section * {
     z-index: 2; }
   section h1 {
     color: #CFD8DC; }
 
 img.sit {
-  margin-bottom: -4rem;
+  margin-bottom: -2rem;
   padding-bottom: 1px; }
 
 .template-content {
@@ -2948,7 +2948,7 @@ img.sit {
   color: #fff;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 10rem; }
+  padding-bottom: 4rem; }
   .home-hero .hero_logo {
     max-width: 150px; }
   .home-hero img {
@@ -3116,7 +3116,7 @@ img.sit {
 
 .cogNewsDemo .globeIcon {
   position: relative;
-  left: -38px;
+  left: -1.3rem;
   bottom: 45px; }
 .cogNewsDemo .watsonButton, .cogNewsDemo .watsonButton:visited {
   height: 50px;
@@ -3219,6 +3219,13 @@ footer {
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
+  section {
+    padding: 4rem 1.5rem; }
+
+  img.sit {
+    margin-bottom: -4rem;
+    padding-bottom: 1px; }
+
   .button--primary {
     max-width: 275px; }
 
@@ -3246,10 +3253,12 @@ footer {
     padding-left: 4rem;
     padding-right: 4rem; }
 
-  .home-hero .hero_logo {
-    max-width: 200px; }
-  .home-hero h1 {
-    font-size: 4rem; }
+  .home-hero {
+    padding-bottom: 10rem; }
+    .home-hero .hero_logo {
+      max-width: 200px; }
+    .home-hero h1 {
+      font-size: 4rem; }
 
   .info-section img, .appHighlight img {
     max-width: 600px; }
