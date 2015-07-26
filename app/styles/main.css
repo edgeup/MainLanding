@@ -2978,7 +2978,10 @@ img.sit {
   padding: 1rem;
   border-radius: 0.25rem; }
   .wrapper_signup p {
-    padding: 0 0 1rem; }
+    padding: 0 0 1rem;
+    color: white;
+    text-align: center;
+    font-weight: bold; }
 
 .emailStatus {
   display: block;
@@ -3247,47 +3250,35 @@ footer {
       width: 11rem;
       display: inline-block;
       position: absolute;
-      right: 0; }
-
-  .emailButton {
-    border-radius: 0 .25rem .25rem 0;
-    border-left: none;
-    background-color: #41a7e1;
-    width: 11rem;
-    display: inline-block;
-    position: absolute;
-    right: 0; }
-
-  section:not(.home-hero) {
-    padding-left: 4rem;
-    padding-right: 4rem; }
-
-  .home-hero {
-    padding-bottom: 10rem; }
-    .home-hero .hero_logo {
-      max-width: 200px; }
-    .home-hero h1 {
-      font-size: 4rem; }
-
-  .info-section img, .appHighlight img {
-    max-width: 600px; }
-
-  .appearances {
-    margin-top: 4rem; }
-    .appearances .logosHolder {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      -moz-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-      height: auto; }
-      .appearances .logosHolder img {
-        width: auto;
-        max-height: 100px; } }
+      right: 0;
+      top: 0; }
+    .emailForm section:not(.home-hero) {
+      padding-left: 4rem;
+      padding-right: 4rem; }
+    .emailForm .home-hero {
+      padding-bottom: 10rem; }
+      .emailForm .home-hero .hero_logo {
+        max-width: 200px; }
+      .emailForm .home-hero h1 {
+        font-size: 4rem; }
+    .emailForm .info-section img, .emailForm .appHighlight img {
+      max-width: 600px; }
+    .emailForm .appearances {
+      margin-top: 4rem; }
+      .emailForm .appearances .logosHolder {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        height: auto; }
+        .emailForm .appearances .logosHolder img {
+          width: auto;
+          max-height: 100px; } }
 /**
 *
 * Helper

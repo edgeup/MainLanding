@@ -447,67 +447,68 @@ footer {
 
   // Button Tweak
   .button--primary {
-    max-width: 275px;
+	max-width: 275px;
   }
 
   // Email Signup
   .emailForm {
 	display: table;
 	position: relative;
-  	.emailInput {
-  	  width: 100%;
-  	  border-radius: .25rem;
-  	  color: $brand_color-ltblue;
-  	  margin-top: 0;
-  	  position: relative;
-  	  display: table-cell;
-  	  padding-right: 15rem;
-  	}
-  	.emailButton {
-  	  border-radius: 0 .25rem .25rem 0;
-  	  border-left: none;
-  	  background-color: $brand_color-ltblue;
-  	  width: 11rem;
-  	  display: inline-block;
-  	  position: absolute;
-  	  right: 0;
-      top: 0;
-  	}
-
-  // Padding Tweak
-  section:not(.home-hero) {
-	padding-left: 4rem;
-	padding-right: 4rem;
-  }
-
-  // Hero
-  .home-hero {
-	padding-bottom: 10rem;
-	.hero_logo {
-	  max-width: 200px;
+	.emailInput {
+	  width: 100%;
+	  border-radius: .25rem;
+	  color: $brand_color-ltblue;
+	  margin-top: 0;
+	  position: relative;
+	  display: table-cell;
+	  padding-right: 15rem;
 	}
-	h1 {
+	.emailButton {
+	  border-radius: 0 .25rem .25rem 0;
+	  border-left: none;
+	  background-color: $brand_color-ltblue;
+	  width: 11rem;
+	  display: inline-block;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+
+	// Padding Tweak
+	section:not(.home-hero) {
+	  padding-left: 4rem;
+	  padding-right: 4rem;
+	}
+
+	// Hero
+	.home-hero {
+	  padding-bottom: 10rem;
+	  .hero_logo {
+		max-width: 200px;
+	  }
+	  h1 {
 		font-size: 4rem;
-  	}
-  }
-
-  // Image Tweak
-  .info-section, .appHighlight {
-	img {
-	  max-width: 600px;
+	  }
 	}
-  }
 
-  // Appearances
-  .appearances {
-	margin-top: 4rem;
-	.logosHolder {
-	  @include flexbox;
-	  @include flex-flow(row wrap);
-	  height: auto;
+	// Image Tweak
+	.info-section, .appHighlight {
 	  img {
-		width: auto;
-		max-height: 100px;
+		max-width: 600px;
+	  }
+	}
+
+	// Appearances
+	.appearances {
+	  margin-top: 4rem;
+	  .logosHolder {
+		@include flexbox;
+		@include flex-flow(row wrap);
+		height: auto;
+		img {
+		  width: auto;
+		  max-height: 100px;
+		}
 	  }
 	}
   }
