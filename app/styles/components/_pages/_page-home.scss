@@ -471,19 +471,8 @@ footer {
   	  display: inline-block;
   	  position: absolute;
   	  right: 0;
-  	}
-  }
-
-  .emailButton {
-      border-radius: 0 .25rem .25rem 0;
-      border-left: none;
-      background-color: $brand_color-ltblue;
-      width: 11rem;
-      display: inline-block !important;
-      position: absolute;
-      right: 0;
       top: 0;
-    }
+  	}
 
   // Padding Tweak
   section:not(.home-hero) {
