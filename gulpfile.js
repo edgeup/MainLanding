@@ -64,6 +64,7 @@ gulp.task('images', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'app/*',
+    'app/**/*',
     '!app/*.html',
     'node_modules/apache-server-configs/dist/.htaccess'
   ], {
