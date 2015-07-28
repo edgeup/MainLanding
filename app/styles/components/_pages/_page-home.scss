@@ -124,6 +124,7 @@ img.sit {
   	line-height: 150%;
   	width: 100%;
   	max-width: 100%;
+	padding: 12px;
   }
   input.emailInput {
     background-color: white;
@@ -132,11 +133,9 @@ img.sit {
     text-align: left;
   }
   .emailButton {
-    margin-top: 0;
+    margin-top: 1rem;
     background-color: $brand_color-ltblue;
     display: block;
-	font-size: 1.5rem;
-	line-height: 150%;
 	&:hover {
 	  background-color: darken($brand_color-ltblue, 20%);
 	}
@@ -466,6 +465,7 @@ footer {
 	  padding-right: 15rem;
 	}
 	.emailButton {
+	  margin-top: 0;
 	  border-radius: 0 .25rem .25rem 0;
 	  border-left: none;
 	  background-color: $brand_color-ltblue;
