@@ -109,6 +109,10 @@
   user-select: none;
 }
 
+input {
+  -webkit-user-select: auto !important;
+}
+
 
 /*==========  TAG  ==========*/
 .tag {
