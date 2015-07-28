@@ -1,10 +1,16 @@
 machine:
     node:
         version: 0.10.36
+    ruby:
+        version: rbx-2.2.6
 
 dependencies:
     override:
         - sudo pip install awscli
+        - gem install sass --version 3.4.9
+        - npm install -g bower gulp
+        - npm install && bower install
+        - gulp
 
 test:
     override:
@@ -14,4 +20,4 @@ deployment:
     aws:
         branch: master
         commands:
-            - /bin/bash publish.sh    
+            - /bin/bash publish.sh
