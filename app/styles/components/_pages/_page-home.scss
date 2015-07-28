@@ -435,7 +435,7 @@ footer {
 
 
 /** Larger Screens - desktops and tablets **/
-@media all and (min-width: 990px) {
+@media (min-width: 990px) {
 
   // General
   section {
@@ -475,6 +475,7 @@ footer {
 	  right: 0;
 	  top: 0;
 	}
+  }
 
 	// Padding Tweak
 	section:not(.home-hero) {
@@ -513,5 +514,4 @@ footer {
 		}
 	  }
 	}
-  }
 }
