@@ -127,8 +127,8 @@ img.sit {
   }
   input.emailInput {
     background-color: white;
-    color: $brand_color-ltblue;
-	-webkit-user-select: text;
+    color: $brand_color-ltblue !important;
+	-webkit-user-select: text !important;
     margin-top: 0;
     text-align: left;
   }
