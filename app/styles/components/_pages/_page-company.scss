@@ -1,0 +1,123 @@
+a:visited {
+	color: white;
+}
+
+.company {
+	background-image: url("../images/faceMatrix_bg.png");
+	background-size: cover;
+	text-align: left;
+	h1 {
+	   text-align: center;
+		background-color: rgba($brand-color-dkblue, 0.75);
+		padding: 1rem 0 1.5rem;
+		margin: 2rem -1.5rem 0;
+		border: 1px solid rgba(255,255,255, 0.1);
+		border-left: 0;
+		border-right: 0;
+		color: $brand-color-ltblue;
+		font-size: 2.75rem;
+		font-weight: bold;
+		.wordbreak {
+		  display: block;
+		}
+	}
+	p {
+			color: white;
+	}
+	.companyInfo {
+
+		h4 {
+			font-size: 1.5rem;
+			color: white;
+			font-weight: 700;
+		}
+		p {
+			font-size: 1.5rem;
+			font-weight: 500;
+			span {
+				color: rgba(255,255,255,.35);
+			}
+		}
+		.companySocial {
+			padding: 4rem 0;
+			@include flexbox;
+			@include flex-flow(row wrap);
+			i {
+				font-size: 2.5rem;
+				color: rgba(255,255,255,.35);
+				margin: 0 auto;
+			}
+		}
+	}
+	.mapHolder {
+		width: 100%;
+		min-height: 200px;
+		background-image: url("../images/mapToEU.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		img {
+			visibility: hidden;
+			width: 100%;
+		}
+	}
+}
+
+.team {
+	background-color: $brand-color-dkblue;
+	background-image: url("../images/cluster.png"), url("../images/logobg-motionblur.png");
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, 200%;
+	background-position: center;
+	text-align: center;
+	.profileImage {
+		width: 13rem;
+		height: 13rem;
+		background-color: $brand-color-dkblue;
+		border-radius: 50%;
+		margin: 0 auto;
+		border: .2rem solid $brand-color-ltblue;
+		background-image: url("../images/profile-ilya.jpg");
+		background-position: center;
+		background-size: cover;
+	}
+	h2 {
+		color: white;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.jobCircle {
+		width: 5rem;
+		height: 5rem;
+		background-color: $brand-color-ltblue;
+		border-radius: 50%;
+		position: relative;
+		left: 8rem;
+		top: 8rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-weight: 500;
+	}
+		.memberSocial {
+			@include flexbox;
+			@include flex-flow(row wrap);
+			max-width: 10rem;
+			margin: 0 auto;
+			padding-top: 1rem;
+			i {
+				font-size: 2rem;
+				color: rgba(255,255,255,.35);
+				margin: 0 auto;
+			}
+		}
+}
+
+
+
+
+
+
+
+
+

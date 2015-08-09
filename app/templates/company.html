@@ -1,9 +1,61 @@
-<input type="text" ng-model="first.greeting.message"/>
+<section class="company">
+	<h1>Let's Hear It</h1>
+	<p>Hey you, you are awesome. You know that? Go ahead and contact us.</p>
+	<div class="companyInfo">
+		<h4>Edge Up Sports</h4>
+		<p>
+			<span>Address:</span><br>
+			410 E. 3rd Street<br>
+			Kansas City, MO 64106
+		</p>
+		<p>
+			<span>Phone:</span><br>
+			234.241.7453
+		</p>
+		<div class="companySocial">
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-dribbble"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+	</div>
+	<div class="mapHolder">
+		<img src="../images/mapToEU.png">
+	</div>
+</section>
 
-<div ng-class="first.greeting.message">
+<section class="team">
+	<div class="member">
+		<div class="profileImage">
+			<div class="jobCircle">
+				Founder
+			</div>
+		</div>
+		<h2>Ilya Tabakh</h2>
+		<div class="memberSocial">	
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+	</div>
+</section>
 
-    {{ first.greeting.message }} {{ "World" }}
+<section class="info-section">
+	<h1>Get On The Field</h1>
+	<p>We’re always looking for badasses. Are you a badass? We won’t believe it until you contact us with some of your thoughts and feedback. End shitty copy, out.</p>
+	<a href=" " target="_blank" class="button--primary">Get In touch</a>
+</section>
 
-</div>
-
-<div ui-sref="second">Go to second</div>
+<footer>
+    <a class="button--primary" ng-show="crowdfundingStatus">Learn More At Kickstarter</a>
+    <div class="shareButtons">
+        <div class="btn">
+            <a href="http://twitter.com/edgeupsports" target="_blank" class="fa fa-twitter"></a>
+        </div>
+        <div class="btn">
+            <a href="http://facebook.com/edgeupsports" target="_blank" class="fa fa-facebook"></a>
+        </div>
+    </div>
+    <p>contact@edgeupsports.com<br>
+    <span>&copy; Edge Up Sports. All Rights Reserved</span></p>
+</footer>
