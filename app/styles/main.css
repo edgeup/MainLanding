@@ -2316,6 +2316,125 @@ footer {
       .appearances .logosHolder img {
         width: auto;
         max-height: 100px; } }
+a:visited {
+  color: white; }
+
+.company {
+  background-image: url("../images/faceMatrix_bg.png");
+  background-size: cover;
+  text-align: left; }
+  .company h1 {
+    text-align: center;
+    background-color: rgba(27, 54, 68, 0.75);
+    padding: 1rem 0 1.5rem;
+    margin: 2rem -1.5rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 0;
+    border-right: 0;
+    color: #41a7e1;
+    font-size: 2.75rem;
+    font-weight: bold; }
+    .company h1 .wordbreak {
+      display: block; }
+  .company p {
+    color: white; }
+  .company .companyInfo h4 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700; }
+  .company .companyInfo p {
+    font-size: 1.5rem;
+    font-weight: 500; }
+    .company .companyInfo p span {
+      color: rgba(255, 255, 255, 0.35); }
+  .company .companyInfo .companySocial {
+    padding: 4rem 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .company .companyInfo .companySocial a.fa {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center;
+      font-size: 2.5rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0 auto;
+      transition: all 0.4s;
+      text-decoration: none; }
+      .company .companyInfo .companySocial a.fa:hover {
+        color: white; }
+  .company .mapHolder {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../images/mapToEU.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .company .mapHolder img {
+      visibility: hidden;
+      width: 100%; }
+
+.team {
+  background-color: #1b3644;
+  background-image: url("../images/cluster.png"), url("../images/logobg-motionblur.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 200%;
+  background-position: center;
+  text-align: center; }
+  .team .profileImage {
+    width: 13rem;
+    height: 13rem;
+    background-color: #1b3644;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 0.2rem solid #41a7e1;
+    background-image: url("../images/profile-ilya.jpg");
+    background-position: center;
+    background-size: cover; }
+  .team h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem; }
+  .team .jobCircle {
+    width: 5rem;
+    height: 5rem;
+    background-color: #41a7e1;
+    border-radius: 50%;
+    position: relative;
+    left: 8rem;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500; }
+  .team .memberSocial {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    max-width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem; }
+    .team .memberSocial i {
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.35);
+      margin: 0 auto; }
+
 /**
 *
 * Helper
