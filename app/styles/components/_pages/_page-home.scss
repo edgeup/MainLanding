@@ -363,6 +363,18 @@ footer {
       background-color: rgba($brand_color-blueGrey0, 0.5);
     }
   }
+  .footerContact, .footerContact:visited {
+	text-decoration: none;
+	transition: all 0.2s;
+	color: $brand_color-ltblue;
+	display: block;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	font-weight: bold;
+	&:hover {
+	  color: rgba($brand_color-blueGrey0, 0.5);
+	}
+  }
   .twitter {
     margin-right: 20px;
   }
@@ -370,7 +382,9 @@ footer {
     width: 100%;
   }
   p {
+	padding-top: 1.25rem;
     color: white;
+	font-size: 1rem;
   }
   span {
     font-size: 10px;

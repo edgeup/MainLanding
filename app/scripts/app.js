@@ -33,7 +33,7 @@
     app.controller('HomeCtrl', function HomeCtrl($scope) {
         // Set if we're crowdfunding or not
         // TODO: KICKSTARTER - SET TO TRUE
-        $scope.crowdfundingStatus = true;
+        $scope.crowdfundingStatus = false;
         $scope.kickstarterlink = 'http://bit.ly/edgeupks';
     });
 
