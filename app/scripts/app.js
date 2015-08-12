@@ -33,7 +33,7 @@
     app.controller('HomeCtrl', function HomeCtrl($scope) {
         // Set if we're crowdfunding or not
         // TODO: KICKSTARTER - SET TO TRUE
-        $scope.crowdfundingStatus = false;
+        $scope.crowdfundingStatus = true;
         $scope.kickstarterlink = 'http://bit.ly/edgeupks';
     });
 
@@ -96,9 +96,8 @@
 
                         height: "1280",
                         width: "720",
-                        videoId: "vmiUGJtcUi4"
-                        // TODO: KICKSTARTER - SET THIS VIDEO CODE
-                        //videoId: "CsQYoxJVGl4"
+                        //videoId: "vmiUGJtcUi4"
+                        videoId: "CsQYoxJVGl4"
                     });
                 };
             }
