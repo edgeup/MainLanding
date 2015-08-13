@@ -2112,31 +2112,57 @@ img.sit {
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  max-width: 500px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
   margin: 0 auto; }
-  .appearances .logosHolder .logo {
-    height: 9rem;
+  .appearances .logosHolder .wrapper_logo {
+    position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin: 0 1rem;
-    transition: opacity 0.25s;
+    -webkit-flex-basis: 100px;
+    -moz-flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+    max-width: 9rem;
+    min-width: 9rem;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1rem 0.5rem;
+    height: 9rem;
+    margin: 1rem;
+    transition: opacity 0.25s; }
+    .appearances .logosHolder .wrapper_logo:hover {
+      opacity: 0.5; }
+  .appearances .logosHolder .logo {
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    margin: auto;
+    padding: -1rem;
     background: transparent no-repeat center center / contain; }
     .appearances .logosHolder .logo._cnn {
-      background-image: url("../images/cnnLogo.png"); }
+      background-image: url("../images/news/cnnLogo.png"); }
     .appearances .logosHolder .logo._techco {
-      background-image: url("../images/techco.png"); }
+      background-image: url("../images/news/techco.png");
+      opacity: 0.8; }
     .appearances .logosHolder .logo._startland {
-      background-image: url("../images/startland.png"); }
+      background-image: url("../images/news/startland.png");
+      opacity: 0.75; }
+    .appearances .logosHolder .logo._motherboard {
+      background-image: url("../images/news/motherboard.png");
+      opacity: 0.75; }
+    .appearances .logosHolder .logo._pcWorld {
+      background-image: url("../images/news/pcWorld.png"); }
     .appearances .logosHolder .logo._watson {
-      background-image: url("../images/watsonLogo.png"); }
+      background-image: url("../images/news/watsonLogo.png"); }
     .appearances .logosHolder .logo._espn {
-      background-image: url("../images/espnLogo.png"); }
-    .appearances .logosHolder .logo:hover {
-      opacity: 0.5; }
+      background-image: url("../images/news/espnLogo.png"); }
 
 .appHighlight {
   background: url("../images/mobileHighlight.jpg") no-repeat center center;
@@ -2314,20 +2340,14 @@ footer {
 
   .appearances {
     margin-top: 4rem; }
-    .appearances .logosHolder {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      -moz-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-      height: auto; }
-      .appearances .logosHolder img {
-        width: auto;
-        max-height: 100px; } }
+    .appearances .logosHolder img {
+      width: auto;
+      max-height: 100px; }
+    .appearances .logo {
+      -webkit-flex-basis: 20%;
+      -moz-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+      flex-basis: 20%; } }
 a:visited {
   color: white; }
 

@@ -237,32 +237,54 @@ img.sit {
   .logosHolder {
     @include flexbox;
 	@include flex-flow(row wrap);
-	max-width: 500px;
+	@include justify-content(center);
+	$blocksize: 9rem;
 	margin: 0 auto;
-    .logo {
-	  $blocksize: 9rem;
-	  height: $blocksize;
+	.wrapper_logo {
+	  position: relative;
 	  @include flex(1);
-	  margin: 0 1rem;
+	  @include flex-basis(100px);
+	  max-width: 9rem;
+	  min-width: 9rem;
+	  background: rgba(0,0,0,0.1);
+	  padding: 1rem 0.5rem;
+	  height: $blocksize;
+	  margin: 1rem;
 	  transition: opacity 0.25s;
-      background: transparent no-repeat center center / contain;
-	  &._cnn {
-		background-image: url('../images/cnnLogo.png');
-	  }
-	  &._techco {
-		background-image: url('../images/techco.png');
-	  }
-	  &._startland {
-		background-image: url('../images/startland.png');
-	  }
-	  &._watson {
-		background-image: url('../images/watsonLogo.png');
-	  }
-	  &._espn {
-		background-image: url('../images/espnLogo.png');
-	  }
 	  &:hover {
 		opacity: 0.5;
+	  }
+	}
+    .logo {
+	  height: 100%;
+	  width: 90%;
+	  display: inline-block;
+	  margin: auto;
+	  padding: -1rem;
+      background: transparent no-repeat center center / contain;
+	  &._cnn {
+		background-image: url('../images/news/cnnLogo.png');
+	  }
+	  &._techco {
+		background-image: url('../images/news/techco.png');
+		opacity: 0.8;
+	  }
+	  &._startland {
+		background-image: url('../images/news/startland.png');
+		opacity: 0.75;
+	  }
+	  &._motherboard {
+		background-image: url('../images/news/motherboard.png');
+		opacity: 0.75;
+	  }
+	  &._pcWorld {
+		background-image: url('../images/news/pcWorld.png');
+	  }
+	  &._watson {
+		background-image: url('../images/news/watsonLogo.png');
+	  }
+	  &._espn {
+		background-image: url('../images/news/espnLogo.png');
 	  }
 	}
   }
@@ -519,13 +541,13 @@ footer {
 	.appearances {
 	  margin-top: 4rem;
 	  .logosHolder {
-		@include flexbox;
-		@include flex-flow(row wrap);
-		height: auto;
 		img {
 		  width: auto;
 		  max-height: 100px;
 		}
+	  }
+	  .logo {
+		@include flex-basis(20%);
 	  }
 	}
 }
