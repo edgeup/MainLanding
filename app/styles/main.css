@@ -2407,13 +2407,17 @@ a:visited {
         color: white; }
   .company .mapHolder {
     width: 100%;
-    min-height: 200px;
-    background-image: url("../images/mapToEU.png");
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat; }
     .company .mapHolder img {
-      visibility: hidden;
-      width: 100%; }
+      width: 100%;
+      height: 100%;
+      -webkit-filter: grayscale(90%);
+      -moz-filter: grayscale(90%);
+      -o-filter: grayscale(90%);
+      -ms-filter: grayscale(90%);
+      filter: grayscale(90%); }
 
 .team {
   background-color: #1b3644;
@@ -2421,21 +2425,58 @@ a:visited {
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 200%;
   background-position: center;
-  text-align: center; }
-  .team .profileImage {
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .team .member {
+    margin: 2rem auto;
+    padding: 0 1rem; }
+  .team .profileCircle {
     width: 13rem;
     height: 13rem;
+    border: 0.2rem solid #41a7e1;
+    border-radius: 50%; }
+  .team .profileImage {
+    width: 100%;
+    height: 100%;
     background-color: #1b3644;
     border-radius: 50%;
     margin: 0 auto;
-    border: 0.2rem solid #41a7e1;
-    background-image: url("../images/profile-ilya.jpg");
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    position: relative;
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    -o-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    filter: grayscale(90%); }
+  .team .ilya {
+    background-image: url("../images/profile-ilya.jpg"); }
+  .team .andrew {
+    background-image: url("../images/profile-andrew.jpg"); }
+  .team .coty {
+    background-image: url("../images/profile-coty.jpg"); }
+  .team .ravi {
+    background-image: url("../images/profile-ravi.jpg"); }
+  .team .kyle {
+    background-image: url("../images/profile-kyle.jpg"); }
+  .team .stefan {
+    background-image: url("../images/profile-stefan.jpg"); }
+  .team .chris {
+    background-image: url("../images/profile-chris.jpg"); }
+  .team .isaac {
+    background-image: url("../images/profile-isaac.jpg"); }
   .team h2 {
     color: white;
     font-weight: 700;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .team .jobCircle {
     width: 5rem;
     height: 5rem;
@@ -2443,7 +2484,7 @@ a:visited {
     border-radius: 50%;
     position: relative;
     left: 8rem;
-    top: 8rem;
+    bottom: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2462,11 +2503,26 @@ a:visited {
     max-width: 10rem;
     margin: 0 auto;
     padding-top: 1rem; }
-    .team .memberSocial i {
+    .team .memberSocial a {
       font-size: 2rem;
-      color: rgba(255, 255, 255, 0.35);
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all 0.4s;
+      text-decoration: none; }
+      .team .memberSocial a:hover {
+        color: white; }
 
+@media (min-width: 800px) {
+  .company p {
+    margin: 2rem 0; }
+  .company .mapHolder {
+    width: 60%;
+    float: left; }
+  .company .companyInfo {
+    width: 40%;
+    float: right;
+    padding-left: 2rem; } }
 /**
 *
 * Helper
