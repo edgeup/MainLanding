@@ -246,7 +246,7 @@ img.sit {
 	  @include flex-basis(100px);
 	  max-width: 9rem;
 	  min-width: 9rem;
-	  background: rgba(0,0,0,0.1);
+	  background: rgba(darken($brand-color-dkblue, 5%), 0.9);
 	  padding: 1rem 0.5rem;
 	  height: $blocksize;
 	  margin: 1rem;
@@ -273,9 +273,33 @@ img.sit {
 		background-image: url('../images/news/nbc.png');
 		opacity: 0.6;
 	  }
+	  &._cio {
+		background-image: url('../images/news/cio.png');
+		opacity: 0.5;
+	  }
+	  &._ars {
+		background-image: url('../images/news/ars.png');
+		opacity: 0.6;
+	  }
+	  &._fastco {
+		background-image: url('../images/news/fastco.png');
+		opacity: 0.75;
+	  }
+	  &._quartz {
+		background-image: url('../images/news/quartz.png');
+		opacity: 0.75;
+	  }
+	  &._wired {
+		background-image: url('../images/news/wired.png');
+		opacity: 0.75;
+	  }
 	  &._startland {
 		background-image: url('../images/news/startland.png');
 		opacity: 0.75;
+	  }
+	  &._esquire {
+		background-image: url('../images/news/esquire.png');
+		opacity: 0.65;
 	  }
 	  &._motherboard {
 		background-image: url('../images/news/motherboard.png');
@@ -283,6 +307,7 @@ img.sit {
 	  }
 	  &._pcWorld {
 		background-image: url('../images/news/pcWorld.png');
+		opacity: 0.6;
 	  }
 	  &._watson {
 		background-image: url('../images/news/watsonLogo.png');

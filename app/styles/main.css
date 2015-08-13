@@ -2132,7 +2132,7 @@ img.sit {
     flex-basis: 100px;
     max-width: 9rem;
     min-width: 9rem;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(20, 40, 50, 0.9);
     padding: 1rem 0.5rem;
     height: 9rem;
     margin: 1rem;
@@ -2154,14 +2154,33 @@ img.sit {
     .appearances .logosHolder .logo._nbc {
       background-image: url("../images/news/nbc.png");
       opacity: 0.6; }
+    .appearances .logosHolder .logo._cio {
+      background-image: url("../images/news/cio.png");
+      opacity: 0.5; }
+    .appearances .logosHolder .logo._ars {
+      background-image: url("../images/news/ars.png");
+      opacity: 0.6; }
+    .appearances .logosHolder .logo._fastco {
+      background-image: url("../images/news/fastco.png");
+      opacity: 0.75; }
+    .appearances .logosHolder .logo._quartz {
+      background-image: url("../images/news/quartz.png");
+      opacity: 0.75; }
+    .appearances .logosHolder .logo._wired {
+      background-image: url("../images/news/wired.png");
+      opacity: 0.75; }
     .appearances .logosHolder .logo._startland {
       background-image: url("../images/news/startland.png");
       opacity: 0.75; }
+    .appearances .logosHolder .logo._esquire {
+      background-image: url("../images/news/esquire.png");
+      opacity: 0.65; }
     .appearances .logosHolder .logo._motherboard {
       background-image: url("../images/news/motherboard.png");
       opacity: 0.75; }
     .appearances .logosHolder .logo._pcWorld {
-      background-image: url("../images/news/pcWorld.png"); }
+      background-image: url("../images/news/pcWorld.png");
+      opacity: 0.6; }
     .appearances .logosHolder .logo._watson {
       background-image: url("../images/news/watsonLogo.png"); }
     .appearances .logosHolder .logo._espn {
