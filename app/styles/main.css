@@ -2151,6 +2151,9 @@ img.sit {
     .appearances .logosHolder .logo._techco {
       background-image: url("../images/news/techco.png");
       opacity: 0.8; }
+    .appearances .logosHolder .logo._nbc {
+      background-image: url("../images/news/nbc.png");
+      opacity: 0.6; }
     .appearances .logosHolder .logo._startland {
       background-image: url("../images/news/startland.png");
       opacity: 0.75; }
