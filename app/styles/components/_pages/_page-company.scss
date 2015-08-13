@@ -58,13 +58,17 @@ a:visited {
   }
   .mapHolder {
 	width: 100%;
-	min-height: 200px;
-	background-image: url("../images/mapToEU.png");
+	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	img {
-	  visibility: hidden;
 	  width: 100%;
+	  height: 100%;
+		-webkit-filter: grayscale(90%);
+		-moz-filter: grayscale(90%);
+		-o-filter: grayscale(90%);
+		-ms-filter: grayscale(90%);
+		filter: grayscale(90%);
 	}
   }
 }
@@ -76,21 +80,61 @@ a:visited {
   background-size: cover, 200%;
   background-position: center;
   text-align: center;
-  .profileImage {
-	width: 13rem;
+  	@include flexbox;
+	@include flex-flow(row wrap);
+  .member {
+  	margin: 2rem auto;
+  	padding: 0 1rem;
+  }
+  .profileCircle {
+  	width: 13rem;
 	height: 13rem;
+	border: .2rem solid $brand-color-ltblue;
+	border-radius: 50%;
+  }
+  .profileImage {
+	width: 100%;
+	height: 100%;
 	background-color: $brand-color-dkblue;
 	border-radius: 50%;
 	margin: 0 auto;
-	border: .2rem solid $brand-color-ltblue;
-	background-image: url("../images/profile-ilya.jpg");
 	background-position: center;
 	background-size: cover;
+	position: relative;
+	-webkit-filter: grayscale(90%);
+	-moz-filter: grayscale(90%);
+	-o-filter: grayscale(90%);
+	-ms-filter: grayscale(90%);
+	filter: grayscale(90%);
+  }
+  .ilya {
+  	background-image: url("../images/profile-ilya.jpg");
+  }
+  .andrew {
+  	background-image: url("../images/profile-andrew.jpg");
+  }
+  .coty {
+  	background-image: url("../images/profile-coty.jpg");
+  }
+  .ravi {
+  	background-image: url("../images/profile-ravi.jpg");
+  }
+  .kyle {
+  	background-image: url("../images/profile-kyle.jpg");
+  }
+  .stefan {
+  	background-image: url("../images/profile-stefan.jpg");
+  }
+  .chris {
+  	background-image: url("../images/profile-chris.jpg");
+  }
+  .isaac {
+  	background-image: url("../images/profile-isaac.jpg");
   }
   h2 {
 	color: white;
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.5rem;
   }
   .jobCircle {
 	width: 5rem;
@@ -99,7 +143,7 @@ a:visited {
 	border-radius: 50%;
 	position: relative;
 	left: 8rem;
-	top: 8rem;
+	bottom: 4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -112,17 +156,36 @@ a:visited {
 	max-width: 10rem;
 	margin: 0 auto;
 	padding-top: 1rem;
-	i {
-	  font-size: 2rem;
-	  color: rgba(255,255,255,.35);
-	  margin: 0 auto;
+	a {
+		font-size: 2rem;
+		margin: 0 auto;
+		text-decoration: none;
+		color: rgba(255,255,255,0.5);
+		transition: all 0.4s;
+		text-decoration: none;
+		&:hover {
+		color: rgba(255,255,255,1);
+		}
 	}
   }
 }
 
-
-
-
+@media (min-width: 800px) {
+	.company {
+		p {
+			margin: 2rem 0;
+		}
+		.mapHolder {
+			width: 60%;
+			float: left;
+		}
+		.companyInfo {
+			width: 40%;
+			float: right;
+			padding-left: 2rem;
+		}
+	}
+}
 
 
 
