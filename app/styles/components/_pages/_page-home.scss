@@ -238,14 +238,14 @@ img.sit {
     @include flexbox;
 	@include flex-flow(row wrap);
 	@include justify-content(center);
-	$blocksize: 9rem;
+	$blocksize: 6rem;
 	margin: 0 auto;
 	.wrapper_logo {
 	  position: relative;
 	  @include flex(1);
 	  @include flex-basis(100px);
 	  max-width: 9rem;
-	  min-width: 9rem;
+	  min-width: 4rem;
 	  background: rgba(darken($brand-color-dkblue, 5%), 0.9);
 	  padding: 1rem 0.5rem;
 	  height: $blocksize;

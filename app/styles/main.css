@@ -2131,10 +2131,10 @@ img.sit {
     -ms-flex-preferred-size: 100px;
     flex-basis: 100px;
     max-width: 9rem;
-    min-width: 9rem;
+    min-width: 4rem;
     background: rgba(20, 40, 50, 0.9);
     padding: 1rem 0.5rem;
-    height: 9rem;
+    height: 6rem;
     margin: 1rem;
     transition: opacity 0.25s; }
     .appearances .logosHolder .wrapper_logo:hover {
