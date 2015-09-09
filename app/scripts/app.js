@@ -32,7 +32,7 @@
 // Controllers
     app.controller('HomeCtrl', function HomeCtrl($scope) {
         // Set if we're crowdfunding or not
-        $scope.crowdfundingStatus = true;
+        $scope.crowdfundingStatus = false;
         $scope.kickstarterlink = 'https://www.kickstarter.com/projects/edgeupsports/edge-up-sports-fantasy-football-can-be-fun-again';
     });
 

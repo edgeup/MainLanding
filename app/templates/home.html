@@ -10,13 +10,13 @@
 	        <span class="wordbreak">of your weekly research.</span>
         </h2>
     </div>
-    <p ng-show="!crowdfundingStatus">For more info on early access this season, sign up here.</p>
+    <p ng-show="!crowdfundingStatus">To get updates on platform signup opportunities, subscribe here.</p>
 	<p ng-show="crowdfundingStatus">We're opening up early access to this season and next.</p>
     <a class="button--primary" href="{{kickstarterlink}}" target="_blank" ng-show="crowdfundingStatus">Back Our Kickstarter</a>
 <!-- Begin MailChimp Signup Form -->
 <div class="wrapper_signup" ng-show="!crowdfundingStatus">
     <div id="mc_embed_signup">
-    <form action="//edgeupsports.us9.list-manage.com/subscribe/post?u=d6d6b0b823dfe186b05ddf364&amp;id=42506a8a37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate emailForm" target="_blank">
+    <form action="http://edgeupsports.us9.list-manage.com/subscribe?u=d6d6b0b823dfe186b05ddf364&id=fc70c78ed2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate emailForm" target="_blank">
         <div id="mc_embed_signup_scroll">
             <div class="mc-field-group">
                 <!--<span ng-show="emailForm.email.$dirty && emailForm.email.$invalid" class="emailStatus">Your email isn't formatted quite right yet</span>-->
@@ -56,13 +56,14 @@
     <img src="../images/UI-triptych0.png" class="sit">
 </section>
 
-<section class="video-section bg_grid" >
+<section class="video-section bg_grid">
     <h1 ng-show="!crowdfundingStatus">Our Vision</h1>
     <h1 ng-show="crowdfundingStatus">Be One Of The First <span class="wordbreak">To Get An Edge Up</span></h1>
     <div class="blue-line"></div>
     <div class="embed-responsive embed-responsive-16by9">
 	    <youtube></youtube>
     </div>
+    <a class="fundedLink" href="http://bit.ly/edgeupks" target="_blank">We're Funded On Kickstarter!</a>
     <div class="shareCampaign" ng-show="crowdfundingStatus">
 	    <a class="button--primary" href="{{kickstarterlink}}" target="_blank">Back Our Kickstarter</a>
         <p>Share The Campaign</p>

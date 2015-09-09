@@ -2079,6 +2079,16 @@ img.sit {
     overflow: hidden; }
     .video-section .pitchVid h3 {
       color: rgba(236, 239, 241, 0.75); }
+  .video-section a.fundedLink, .video-section .fundedLink:active, .video-section .fundedLink:visited {
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #41a7e1;
+    display: block;
+    font-weight: bold;
+    transition: 0.25s all; }
+  .video-section .fundedLink:hover {
+    opacity: 0.5; }
 
 .shareCampaign p {
   color: #CFD8DC; }

@@ -201,6 +201,18 @@ img.sit {
       color: rgba($brand_color-blueGrey1, 0.75);
     }
   }
+  a.fundedLink, .fundedLink:active, .fundedLink:visited {
+	margin-top: 2rem;
+	text-decoration: none;
+	font-size: 2rem;
+	color: $brand_color-ltblue;
+	display: block;
+	font-weight: bold;
+	transition: 0.25s all;
+  }
+  .fundedLink:hover {
+	opacity: 0.5;
+  }
 }
 .shareCampaign {
   p {
