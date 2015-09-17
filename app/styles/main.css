@@ -2196,7 +2196,8 @@ img.sit {
     .appearances .logosHolder .logo._espn {
       background-image: url("../images/news/espnLogo.png"); }
     .appearances .logosHolder .logo._prodHunt {
-      background-image: url("../images/news/productHunt.png"); }
+      background-image: url("../images/news/productHunt.png");
+      opacity: 0.5; }
 
 .appHighlight {
   background: url("../images/mobileHighlight.jpg") no-repeat center center;
