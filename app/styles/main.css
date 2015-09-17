@@ -2195,6 +2195,8 @@ img.sit {
       background-image: url("../images/news/watsonLogo.png"); }
     .appearances .logosHolder .logo._espn {
       background-image: url("../images/news/espnLogo.png"); }
+    .appearances .logosHolder .logo._prodHunt {
+      background-image: url("../images/news/productHunt.png"); }
 
 .appHighlight {
   background: url("../images/mobileHighlight.jpg") no-repeat center center;
