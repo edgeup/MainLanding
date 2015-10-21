@@ -459,6 +459,15 @@ footer {
   }
 }
 
+.sportRadar {
+  text-align: center;
+  background: darken($brand_color-dkblue, 5%);
+  img {
+    max-width: 200px;
+	opacity: 0.75;
+  }
+}
+
 
 
 
